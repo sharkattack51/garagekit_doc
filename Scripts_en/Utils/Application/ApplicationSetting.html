@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>ApplicationSetting | Project Starter Package Doc </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="ApplicationSetting | Project Starter Package Doc ">
+    
+    
+      <link rel="shortcut icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../../styles/docfx.css">
+      <link rel="stylesheet" href="../../../styles/main.css">
+      <meta property="docfx:navrel" content="../../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="applicationsetting">ApplicationSetting</h1>
+
+<p>You can load the external settings file ApplicationSetting.xml and reflect it in the application. xml is loaded by MonoBehaviour's <code>Awake()</code>, so it can be used after <code>Start()</code>.</p>
+<pre><code class="lang-csharp">namespace GarageKit
+public class ApplicationSetting : MonoBehaviour
+</code></pre>
+<h4 id="inheritance">Inheritance</h4>
+<p><code>ApplicationSetting</code> -&gt; <code>MonoBehaviour</code></p>
+<h4 id="inspector">Inspector</h4>
+<img src="../../../image/script_reference/applicationsetting_inspector.png" width="500px">
+<h4 id="properties">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">loadFrom</td>
+<td style="text-align: left;"><a href="#xml_from">XML_FROM</a></td>
+<td style="text-align: left;">Where to load the xml file</td>
+</tr>
+<tr>
+<td style="text-align: left;">xmlFile</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">xml file name</td>
+</tr>
+</tbody>
+</table>
+<h4 id="enums">Enums</h4>
+<h5 id="xml_from"><strong>XML_FROM</strong></h5>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">enums</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">STREAMING_ASSETS</td>
+<td style="text-align: left;">from StreasmingAssets folder</td>
+</tr>
+<tr>
+<td style="text-align: left;">PROJECT_DIRECTORY</td>
+<td style="text-align: left;">from Project folder</td>
+</tr>
+<tr>
+<td style="text-align: left;">CURRENT_WORK_DIRECTORY</td>
+<td style="text-align: left;">from Current folder</td>
+</tr>
+</tbody>
+</table>
+<h4 id="static-methods">Static Methods</h4>
+<p>Get a singleton instance</p>
+<pre><code class="lang-csharp">public static ApplicationSetting Instance { get; }
+</code></pre>
+<h4 id="methods">Methods</h4>
+<p>Xml data table</p>
+<pre><code class="lang-csharp">public Dictionary&lt;string, string&gt; RawData { get; }
+</code></pre>
+<p>Check data validity</p>
+<pre><code class="lang-csharp">public bool IsValid { get; }
+</code></pre>
+<p>Xml load completion callback</p>
+<pre><code class="lang-csharp">public Action OnLoadXML
+</code></pre>
+<p>Load xml</p>
+<pre><code class="lang-csharp">public void LoadXML()
+</code></pre>
+<p>Get string value from xml item name</p>
+<pre><code class="lang-csharp">public string GetString(string key, string defaultValue = &quot;&quot;)
+</code></pre>
+<p>Get bool value from xml item name</p>
+<pre><code class="lang-csharp">public bool GetBool(string key, bool defaultValue = false)
+</code></pre>
+<p>Get int value from xml item name</p>
+<pre><code class="lang-csharp">public int GetInt(string key, int defaultValue = 0)
+</code></pre>
+<p>Get float value from xml item name</p>
+<pre><code class="lang-csharp">public float GetFloat(string key, float defaultValue = 0.0f)
+</code></pre>
+<p>Get string array from xml item name</p>
+<pre><code class="lang-csharp">public string[] GetStringArray(string key, string separator = &quot;,&quot;)
+</code></pre>
+<p>Get int array from xml item name</p>
+<pre><code class="lang-csharp">public int[] GetIntArray(string key, string separator = &quot;,&quot;, int defaultValue = 0)
+</code></pre>
+<p>Get float array from xml item name</p>
+<pre><code class="lang-csharp">public float[] GetFloatArray(string key, string separator = &quot;,&quot;, float defaultValue = 0.0f)
+</code></pre>
+<p>Get bool array from xml item name</p>
+<pre><code class="lang-csharp">public bool[] GetBoolArray(string key, string separator = &quot;,&quot;, bool defaultValue = false)
+</code></pre>
+<p>Get formatted DateTime from xml item name</p>
+<pre><code class="lang-csharp">public DateTime GetFormattedDateTime(string key, string format = &quot;HH:mm:ss&quot;)
+</code></pre>
+<p>Get DateTime value from xml item name</p>
+<pre><code class="lang-csharp">public DateTime GetDateTime(string key)
+</code></pre>
+<p>Get Vector3 value from xml item name</p>
+<pre><code class="lang-csharp">public Vector3 GetVector3(string key, string separator = &quot;,&quot;, Vector3 defaultValue = default(Vector3))
+</code></pre>
+<p>Get Vector2 value from xml item name</p>
+<pre><code class="lang-csharp">public Vector2 GetVector2(string key, string separator = &quot;,&quot;, Vector2 defaultValue = default(Vector2))
+</code></pre>
+<p>Get Color value as RGB 0.0-1.0 from xml item name</p>
+<pre><code class="lang-csharp">public Color GetColor(string key, string separator = &quot;,&quot;, Color defaultValue = default(Color))
+</code></pre>
+<p>Get Color value as RGB 0-255 from xml item name</p>
+<pre><code class="lang-csharp">public Color GetColor255(string key, string separator = &quot;,&quot;, Color defaultValue = default(Color))
+</code></pre>
+<h4 id="example">Example</h4>
+<ul>
+<li>/Scenes/Examples/ApplicationSettingExample.unity</li>
+</ul>
+<pre><code class="lang-csharp">bool isDebug = ApplicationSetting.Instance.GetBool(&quot;IsDebug&quot;);
+int gameTime = ApplicationSetting.Instance.GetInt(&quot;GameTime&quot;);
+string text = ApplicationSetting.Instance.GetString(&quot;Text&quot;);
+</code></pre>
+<ul>
+<li>StreamingAssets/ApplicationSetting.xml</li>
+</ul>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;data&gt;
+    &lt;item name=&quot;IsDebug&quot; value=&quot;true&quot;/&gt;
+    &lt;item name=&quot;GameTime&quot; value=&quot;10&quot;/&gt;
+    &lt;item name=&quot;Text&quot; value=&quot;this is test.&quot;/&gt;
+&lt;/data&gt;
+</code></pre>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

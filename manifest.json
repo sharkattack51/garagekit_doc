@@ -1,0 +1,3518 @@
+{
+  "source_base_path": "/Users/kasai/Documents/Doc/garagekit.github.io",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/AppMain.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/AppMain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Managers/DebugManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Managers/DebugManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Managers/SceneStateManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Managers/SceneStateManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Managers/SoundManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Managers/SoundManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Managers/TimeManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Managers/TimeManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Managers/UserInputManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Managers/UserInputManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/ARFoundationExtention/ARCameraSync.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/ARFoundationExtention/ARCameraSync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/ARFoundationExtention/ARCoreCoachingView.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/ARFoundationExtention/ARCoreCoachingView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/ARFoundationExtention/ARKitCoachingOverlay.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/ARFoundationExtention/ARKitCoachingOverlay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/ARFoundationExtention/ARObjectPlacementManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/ARFoundationExtention/ARObjectPlacementManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/ARFoundationExtention/ARSessionStartHelper.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/ARFoundationExtention/ARSessionStartHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/ARFoundationExtention/ARTrackedImageMarkerManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/ARFoundationExtention/ARTrackedImageMarkerManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/AndroidRuntimePermission.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/AndroidRuntimePermission.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/AndroidUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/AndroidUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/AnimationCurveUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/AnimationCurveUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/AnimationUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/AnimationUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Application/ApplicationSetting.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Application/ApplicationSetting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Application/ExternalProcess.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Application/ExternalProcess.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Application/RemotePrefs.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Application/RemotePrefs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Application/SetAntiAliasing.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Application/SetAntiAliasing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Application/SetAppResolution.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Application/SetAppResolution.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Application/StandalonePlayerResolutionHelper.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Application/StandalonePlayerResolutionHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/AsyncUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/AsyncUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CSV/CsvReader.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CSV/CsvReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CSV/CsvWriter.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CSV/CsvWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CSV/Interfece/ICsvWritable.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CSV/Interfece/ICsvWritable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/CameraShifter.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/CameraShifter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/FlyThroughCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/FlyThroughCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/GrabMove.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/GrabMove.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/GyroCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/GyroCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/ObjectOrbit.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/ObjectOrbit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/ObjectOrbit2.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/ObjectOrbit2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/OrbitCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/OrbitCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/Panorama360Camera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/Panorama360Camera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/PinchZoomCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/PinchZoomCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraControl/UrbanViewerLikeCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraControl/UrbanViewerLikeCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CameraUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CameraUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CaptureUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CaptureUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/CommonUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/CommonUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/DataLoader/ContentsDownLoader.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/DataLoader/ContentsDownLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/DataLoader/ImageLoader.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/DataLoader/ImageLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Debug/CameraGizmoDrawer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Debug/CameraGizmoDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Debug/FpsCounter.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Debug/FpsCounter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Debug/FrameRateUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Debug/FrameRateUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Debug/GizmoDrawer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Debug/GizmoDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Debug/LookAtGizmoDrawer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Debug/LookAtGizmoDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Debug/MemoryProfiler.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Debug/MemoryProfiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Debug/VisibleMouseCursor.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Debug/VisibleMouseCursor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Envelope/C4DAnimDataApply.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Envelope/C4DAnimDataApply.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Envelope/Envelope.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Envelope/Envelope.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/AnimationEventDelegate.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/AnimationEventDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/ButtonObjectEvent.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/ButtonObjectEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/ObservableValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/ObservableValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/OnCollisionHandler.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/OnCollisionHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/OnRenderHandler.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/OnRenderHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/SevenTapLikeAndroid.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/SevenTapLikeAndroid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/TimelineEvent/TimelineEventAction.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/TimelineEvent/TimelineEventAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/TimelineEvent/TimelineEventActionList.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/TimelineEvent/TimelineEventActionList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Event/TimerEvent.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Event/TimerEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Input/VirtualInput.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Input/VirtualInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Input/Win10VirtualKeyboard.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Input/Win10VirtualKeyboard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Localize/Interface/ILocalize.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Localize/Interface/ILocalize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Localize/Language.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Localize/Language.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Localize/LocalizeDropdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Localize/LocalizeDropdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Localize/LocalizeDynamicRawImage.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Localize/LocalizeDynamicRawImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Localize/LocalizeFontScriptable.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Localize/LocalizeFontScriptable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Localize/LocalizeImage.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Localize/LocalizeImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Localize/LocalizeText.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Localize/LocalizeText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Manager/Base/ManagerBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Manager/Base/ManagerBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/MathUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/MathUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Network/SerialPortController.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Network/SerialPortController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Network/TinyHttpServer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Network/TinyHttpServer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Network/UDPReceiver.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Network/UDPReceiver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Network/UDPSender.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Network/UDPSender.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/AnimationByStep.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/AnimationByStep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/AutoBlink.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/AutoBlink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/AutoRotate.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/AutoRotate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/AutoScale.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/AutoScale.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/AutoUVScroll.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/AutoUVScroll.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/Billbord.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/Billbord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/Fader.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/Fader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/LineObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/LineObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/MultiTransformFollower.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/MultiTransformFollower.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/PanoramaOrbit.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/PanoramaOrbit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/ScreenAnchor.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/ScreenAnchor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/ScreenPositionFollower.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/ScreenPositionFollower.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/StageManagedObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/StageManagedObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/TextRandomizer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/TextRandomizer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/TransformFollower.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/TransformFollower.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/WebCamPlateObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/WebCamPlateObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Object/ZsortOrderGroup.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Object/ZsortOrderGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/ObjectUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/ObjectUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Render/GlLineRenderer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Render/GlLineRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Render/RenderScreenTexture.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Render/RenderScreenTexture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Repository/Base/SceneRepositoryBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Repository/Base/SceneRepositoryBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Repository/Interface/ISceneRepository.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Repository/Interface/ISceneRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Base/AsyncStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Base/AsyncStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Base/MultipleSceneAsyncStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Base/MultipleSceneAsyncStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Base/MultipleSceneStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Base/MultipleSceneStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Base/StateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Base/StateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Base/TimelinedSceneStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Base/TimelinedSceneStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Base/VRSceneStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Base/VRSceneStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Interface/IAsyncState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Interface/IAsyncState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Interface/IMultipleSceneState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Interface/IMultipleSceneState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Interface/ISequentialState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Interface/ISequentialState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Interface/IState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Interface/IState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Interface/ITimelinedSceneState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Interface/ITimelinedSceneState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/State/Interface/IVRSceneState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/State/Interface/IVRSceneState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/TextUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/TextUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Texture/NumberTexture.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Texture/NumberTexture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Texture/SequenceSprite.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Texture/SequenceSprite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Texture/SequenceTexture.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Texture/SequenceTexture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/TimelineUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/TimelineUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/UI/InputfieldZenkakuBSFix.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/UI/InputfieldZenkakuBSFix.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/UI/UIFadeGroupComponent.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/UI/UIFadeGroupComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/UI/UIFadeTelop.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/UI/UIFadeTelop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/UI/UILongPressButton.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/UI/UILongPressButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/UI/UIMovieControllPanel.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/UI/UIMovieControllPanel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/UI/UIWebCamRawImage.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/UI/UIWebCamRawImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/VR/VRGazeGuideArrow.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/VR/VRGazeGuideArrow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/WindowsUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/WindowsUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Scripts_en/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/toc.html"
+        },
+        ".json": {
+          "relative_path": "Scripts_en/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/AppMain.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/AppMain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Managers/DebugManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Managers/DebugManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Managers/SceneStateManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Managers/SceneStateManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Managers/SoundManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Managers/SoundManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Managers/TimeManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Managers/TimeManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Managers/UserInputManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Managers/UserInputManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARCameraSync.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARCameraSync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARCoreCoachingView.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARCoreCoachingView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARKitCoachingOverlay.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARKitCoachingOverlay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARObjectPlacementManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARObjectPlacementManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARSessionStartHelper.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARSessionStartHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARTrackedImageMarkerManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/ARFoundationExtention/ARTrackedImageMarkerManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/AndroidRuntimePermission.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/AndroidRuntimePermission.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/AndroidUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/AndroidUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/AnimationCurveUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/AnimationCurveUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/AnimationUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/AnimationUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Application/ApplicationSetting.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Application/ApplicationSetting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Application/ExternalProcess.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Application/ExternalProcess.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Application/RemotePrefs.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Application/RemotePrefs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Application/SetAntiAliasing.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Application/SetAntiAliasing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Application/SetAppResolution.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Application/SetAppResolution.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Application/StandalonePlayerResolutionHelper.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Application/StandalonePlayerResolutionHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/AsyncUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/AsyncUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CSV/CsvReader.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CSV/CsvReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CSV/CsvWriter.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CSV/CsvWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CSV/Interfece/ICsvWritable.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CSV/Interfece/ICsvWritable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/CameraShifter.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/CameraShifter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/FlyThroughCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/FlyThroughCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/GrabMove.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/GrabMove.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/GyroCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/GyroCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/ObjectOrbit.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/ObjectOrbit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/ObjectOrbit2.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/ObjectOrbit2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/OrbitCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/OrbitCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/Panorama360Camera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/Panorama360Camera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/PinchZoomCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/PinchZoomCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraControl/UrbanViewerLikeCamera.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraControl/UrbanViewerLikeCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CameraUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CameraUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CaptureUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CaptureUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/CommonUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/CommonUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/DataLoader/ContentsDownLoader.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/DataLoader/ContentsDownLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/DataLoader/ImageLoader.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/DataLoader/ImageLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Debug/CameraGizmoDrawer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Debug/CameraGizmoDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Debug/FpsCounter.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Debug/FpsCounter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Debug/FrameRateUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Debug/FrameRateUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Debug/GizmoDrawer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Debug/GizmoDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Debug/LookAtGizmoDrawer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Debug/LookAtGizmoDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Debug/MemoryProfiler.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Debug/MemoryProfiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Debug/VisibleMouseCursor.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Debug/VisibleMouseCursor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Envelope/C4DAnimDataApply.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Envelope/C4DAnimDataApply.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Envelope/Envelope.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Envelope/Envelope.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/AnimationEventDelegate.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/AnimationEventDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/ButtonObjectEvent.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/ButtonObjectEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/ObservableValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/ObservableValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/OnCollisionHandler.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/OnCollisionHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/OnRenderHandler.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/OnRenderHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/SevenTapLikeAndroid.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/SevenTapLikeAndroid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/TimelineEvent/TimelineEventAction.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/TimelineEvent/TimelineEventAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/TimelineEvent/TimelineEventActionList.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/TimelineEvent/TimelineEventActionList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Event/TimerEvent.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Event/TimerEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Input/VirtualInput.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Input/VirtualInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Input/Win10VirtualKeyboard.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Input/Win10VirtualKeyboard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Localize/Interface/ILocalize.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Localize/Interface/ILocalize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Localize/Language.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Localize/Language.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Localize/LocalizeDropdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Localize/LocalizeDropdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Localize/LocalizeDynamicRawImage.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Localize/LocalizeDynamicRawImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Localize/LocalizeFontScriptable.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Localize/LocalizeFontScriptable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Localize/LocalizeImage.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Localize/LocalizeImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Localize/LocalizeText.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Localize/LocalizeText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Manager/Base/ManagerBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Manager/Base/ManagerBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/MathUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/MathUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Network/SerialPortController.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Network/SerialPortController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Network/TinyHttpServer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Network/TinyHttpServer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Network/UDPReceiver.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Network/UDPReceiver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Network/UDPSender.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Network/UDPSender.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/AnimationByStep.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/AnimationByStep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/AutoBlink.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/AutoBlink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/AutoRotate.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/AutoRotate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/AutoScale.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/AutoScale.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/AutoUVScroll.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/AutoUVScroll.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/Billbord.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/Billbord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/Fader.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/Fader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/LineObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/LineObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/MultiTransformFollower.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/MultiTransformFollower.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/PanoramaOrbit.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/PanoramaOrbit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/ScreenAnchor.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/ScreenAnchor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/ScreenPositionFollower.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/ScreenPositionFollower.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/StageManagedObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/StageManagedObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/TextRandomizer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/TextRandomizer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/TransformFollower.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/TransformFollower.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/WebCamPlateObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/WebCamPlateObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Object/ZsortOrderGroup.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Object/ZsortOrderGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/ObjectUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/ObjectUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Render/GlLineRenderer.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Render/GlLineRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Render/RenderScreenTexture.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Render/RenderScreenTexture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Repository/Base/SceneRepositoryBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Repository/Base/SceneRepositoryBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Repository/Interface/ISceneRepository.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Repository/Interface/ISceneRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Base/AsyncStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Base/AsyncStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Base/MultipleSceneAsyncStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Base/MultipleSceneAsyncStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Base/MultipleSceneStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Base/MultipleSceneStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Base/StateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Base/StateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Base/TimelinedSceneStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Base/TimelinedSceneStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Base/VRSceneStateBase.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Base/VRSceneStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Interface/IAsyncState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Interface/IAsyncState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Interface/IMultipleSceneState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Interface/IMultipleSceneState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Interface/ISequentialState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Interface/ISequentialState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Interface/IState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Interface/IState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Interface/ITimelinedSceneState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Interface/ITimelinedSceneState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/State/Interface/IVRSceneState.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/State/Interface/IVRSceneState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/TextUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/TextUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Texture/NumberTexture.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Texture/NumberTexture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Texture/SequenceSprite.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Texture/SequenceSprite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Texture/SequenceTexture.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Texture/SequenceTexture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/TimelineUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/TimelineUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/UI/InputfieldZenkakuBSFix.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/UI/InputfieldZenkakuBSFix.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/UI/UIFadeGroupComponent.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/UI/UIFadeGroupComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/UI/UIFadeTelop.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/UI/UIFadeTelop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/UI/UILongPressButton.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/UI/UILongPressButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/UI/UIMovieControllPanel.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/UI/UIMovieControllPanel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/UI/UIWebCamRawImage.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/UI/UIWebCamRawImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/VR/VRGazeGuideArrow.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/VR/VRGazeGuideArrow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/WindowsUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/WindowsUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Scripts_ja/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/toc.html"
+        },
+        ".json": {
+          "relative_path": "Scripts_ja/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Tutorial_en/doc.md",
+      "output": {
+        ".html": {
+          "relative_path": "Tutorial_en/doc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Tutorial_ja/doc.md",
+      "output": {
+        ".html": {
+          "relative_path": "Tutorial_ja/doc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/androidruntimepermission_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/androidruntimepermission_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/animationbystep_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/animationbystep_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/applicationsetting_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/applicationsetting_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/appmain_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/appmain_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/arcamerasync_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/arcamerasync_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/arcorecoachingview_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/arcorecoachingview_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/arkitcoachingoverlay_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/arkitcoachingoverlay_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/arobjectplacementmanager_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/arobjectplacementmanager_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/arsessionstarthelper_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/arsessionstarthelper_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/artrackedimagemarkermanager_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/artrackedimagemarkermanager_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/asyncstatebase_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/asyncstatebase_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/autoblink_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/autoblink_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/autorotate_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/autorotate_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/autoscale_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/autoscale_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/autouvscroll_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/autouvscroll_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/billbord_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/billbord_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/buttonobjectevent_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/buttonobjectevent_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/c4danimdataapply_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/c4danimdataapply_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/cameragizmodrawer_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/cameragizmodrawer_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/cameragizmodrawer_sceneview.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/cameragizmodrawer_sceneview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/camerashifter_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/camerashifter_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/debugmanager_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/debugmanager_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/envelope_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/envelope_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/externalprocess_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/externalprocess_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/fader_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/fader_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/flythroughcamera_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/flythroughcamera_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/fpscounter_gameview.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/fpscounter_gameview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/fpscounter_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/fpscounter_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/framerateutil_gameview.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/framerateutil_gameview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/gizmodrawer_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/gizmodrawer_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/gizmodrawer_sceneview.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/gizmodrawer_sceneview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/gllinerenderer_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/gllinerenderer_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/grabmove_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/grabmove_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/gyrocamera_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/gyrocamera_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/imageloader_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/imageloader_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/lineobject_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/lineobject_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/localizedropdown_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/localizedropdown_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/localizedynamicrawimage_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/localizedynamicrawimage_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/localizefontscriptable_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/localizefontscriptable_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/localizeimage_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/localizeimage_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/localizetext_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/localizetext_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/lookatgizmodrawer_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/lookatgizmodrawer_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/lookatgizmodrawer_sceneview.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/lookatgizmodrawer_sceneview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/memoryprofiler_gameview.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/memoryprofiler_gameview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/multiplesceneasyncstatebase_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/multiplesceneasyncstatebase_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/multiplescenestatebase_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/multiplescenestatebase_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/multitransformfollower_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/multitransformfollower_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/numberexture_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/numberexture_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/objectorbit2_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/objectorbit2_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/objectorbit_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/objectorbit_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/ookatgizmodrawer_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/ookatgizmodrawer_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/orbitcamera_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/orbitcamera_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/panorama360camera_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/panorama360camera_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/panoramaorbit_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/panoramaorbit_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/pinchzoomcamera_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/pinchzoomcamera_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/renderscreentexture_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/renderscreentexture_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/scenestatemanager_hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/scenestatemanager_hierarchy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/scenestatemanager_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/scenestatemanager_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/screenanchor_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/screenanchor_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/screenpositionfollower_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/screenpositionfollower_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/sequencesprite_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/sequencesprite_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/sequencestexture_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/sequencestexture_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/serialportcontroller_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/serialportcontroller_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/setantialiasing_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/setantialiasing_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/setappresolution_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/setappresolution_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/soundmanager_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/soundmanager_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/standaloneplayerresolutionhelper_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/standaloneplayerresolutionhelper_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/textrandomizer_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/textrandomizer_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/timelinedscenestatebase_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/timelinedscenestatebase_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/timemanager_hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/timemanager_hierarchy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/timemanager_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/timemanager_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/tinyhttpserver_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/tinyhttpserver_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/transformfollower_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/transformfollower_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/udpreceiver_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/udpreceiver_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/udpsender_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/udpsender_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/uifadetelop_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/uifadetelop_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/uilongpressbutton_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/uilongpressbutton_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/uimoviecontrollpanel_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/uimoviecontrollpanel_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/urbanviewerlikecamera_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/urbanviewerlikecamera_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/vrgazeguidearrow_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/vrgazeguidearrow_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/vrscenestatebase_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/vrscenestatebase_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/webcamplateobject_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/webcamplateobject_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/webcamrawimage_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/webcamrawimage_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/zsortordergroup_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/zsortordergroup_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/debugmanager.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/debugmanager.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/icon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/import_error.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/import_error.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/open_main.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/open_main.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/openupm.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/openupm.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/package_manager.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/package_manager.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/project_directory.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/project_directory.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/project_window_imported.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/project_window_imported.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/project_window_initial.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/project_window_initial.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/project_window_packages.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/project_window_packages.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/project_window_prjname.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/project_window_prjname.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/scene_hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/scene_hierarchy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/scenestatemanager_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/scenestatemanager_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/scenestatemanager_run.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/scenestatemanager_run.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/soundmanager.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/soundmanager.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/timemanager_hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/timemanager_hierarchy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/tutorial/timemanager_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/tutorial/timemanager_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

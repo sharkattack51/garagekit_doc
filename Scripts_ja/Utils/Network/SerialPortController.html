@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>SerialPortController | Project Starter Package Doc </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="SerialPortController | Project Starter Package Doc ">
+    
+    
+      <link rel="shortcut icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../../styles/docfx.css">
+      <link rel="stylesheet" href="../../../styles/main.css">
+      <meta property="docfx:navrel" content="../../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="serialportcontroller">SerialPortController</h1>
+
+<p>シリアル通信の送受信を行います。</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>利用する場合は PlayerSettings の ApiCompatibilityLevel を <code>.NET Framework</code> に変更します。</p>
+</div>
+<pre><code class="lang-csharp">namespace GarageKit
+public class SerialPortController : MonoBehaviour
+</code></pre>
+<h4 id="inheritance">Inheritance</h4>
+<p><code>SerialPortController</code> -&gt; <code>MonoBehaviour</code></p>
+<h4 id="inspector">Inspector</h4>
+<img src="../../../image/script_reference/serialportcontroller_inspector.png" width="500px">
+<h4 id="properties">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">autoOpen</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">ポートを自動で開く</td>
+</tr>
+<tr>
+<td style="text-align: left;">autoSearchPort</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">利用可能ポートの自動検索</td>
+</tr>
+<tr>
+<td style="text-align: left;">autoSearchInReverse</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">利用可能ポートの自動逆方向検索</td>
+</tr>
+<tr>
+<td style="text-align: left;">portName</td>
+<td style="text-align: left;">List<string></string></td>
+<td style="text-align: left;">ポート名</td>
+</tr>
+</tbody>
+</table>
+<p>シリアル接続パラメータ</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">baudRate</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">BaudRate</td>
+</tr>
+<tr>
+<td style="text-align: left;">parity</td>
+<td style="text-align: left;">Parity</td>
+<td style="text-align: left;">Parity</td>
+</tr>
+<tr>
+<td style="text-align: left;">dataBits</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">DataBits</td>
+</tr>
+<tr>
+<td style="text-align: left;">stopBits</td>
+<td style="text-align: left;">StopBits</td>
+<td style="text-align: left;">StopBits</td>
+</tr>
+<tr>
+<td style="text-align: left;">encoding</td>
+<td style="text-align: left;">Encoding</td>
+<td style="text-align: left;">テキストエンコード</td>
+</tr>
+<tr>
+<td style="text-align: left;">newLineCode</td>
+<td style="text-align: left;">NewLineCode</td>
+<td style="text-align: left;">改行コード</td>
+</tr>
+<tr>
+<td style="text-align: left;">handShake</td>
+<td style="text-align: left;">Handshake</td>
+<td style="text-align: left;">Handshake</td>
+</tr>
+<tr>
+<td style="text-align: left;">dtrEnable</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">DtrEnable</td>
+</tr>
+<tr>
+<td style="text-align: left;">rtsEnable</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">RtsEnable</td>
+</tr>
+<tr>
+<td style="text-align: left;">readTimeout</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">ReadTimeout</td>
+</tr>
+<tr>
+<td style="text-align: left;">writeTimeout</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">WriteTimeout</td>
+</tr>
+</tbody>
+</table>
+<h4 id="enums">Enums</h4>
+<h5 id="newlinecode"><strong>NewLineCode</strong></h5>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">enums</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">LF</td>
+<td style="text-align: left;">\n</td>
+</tr>
+<tr>
+<td style="text-align: left;">CR</td>
+<td style="text-align: left;">\r</td>
+</tr>
+<tr>
+<td style="text-align: left;">CRLF</td>
+<td style="text-align: left;">\r\n</td>
+</tr>
+</tbody>
+</table>
+<h4 id="methods">Methods</h4>
+<p>データ受信コールバック</p>
+<pre><code class="lang-csharp">public Action&lt;string&gt; OnReceive
+</code></pre>
+<p>最新の受信文字列</p>
+<pre><code class="lang-csharp">public string ReceivedDataStr { get; }
+</code></pre>
+<p>ポート状態確認</p>
+<pre><code class="lang-csharp">public bool IsOpen { get;}
+</code></pre>
+<p>ポートを検索して開く</p>
+<pre><code class="lang-csharp">public bool TryRecursiveOpen()
+</code></pre>
+<p>ポートを開く</p>
+<pre><code class="lang-csharp">public void Open()
+</code></pre>
+<p>ポートを閉じる</p>
+<pre><code class="lang-csharp">public void Close()
+</code></pre>
+<p>文字列を送信</p>
+<pre><code class="lang-csharp">public void SendCommand(string str)
+</code></pre>
+<p>文字列を非同期送信</p>
+<pre><code class="lang-csharp">public async UniTask SendCommandAsync(string str)
+</code></pre>
+<p>文字列をバイトデータに変換して送信</p>
+<pre><code class="lang-csharp">public void SendCommandByte(string str)
+</code></pre>
+<p>文字列をバイトデータに変換して非同期送信</p>
+<pre><code class="lang-csharp">public async UniTask SendCommandByteAsync(string str)
+</code></pre>
+<p>スペース区切りの数字のコマンド配列を16進数に変換して送信</p>
+<pre><code class="lang-csharp">public void SendCommandArrayHexByte(string str)
+</code></pre>
+<p>スペース区切りの数字のコマンド配列を16進数に変換して非同期送信</p>
+<pre><code class="lang-csharp">public async UniTask SendCommandArrayHexByteAsync(string str)
+</code></pre>
+<p>バイトデータを送信</p>
+<pre><code class="lang-csharp">public void SendByte(byte[] strBytes)
+</code></pre>
+<p>バイトデータを非同期送信</p>
+<pre><code class="lang-csharp">public async UniTask SendByteAsync(byte[] strBytes)
+</code></pre>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

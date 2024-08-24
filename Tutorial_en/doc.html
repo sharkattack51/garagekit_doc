@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Beginners Tutorial | Project Starter Package Doc </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Beginners Tutorial | Project Starter Package Doc ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="beginners-tutorial">Beginners Tutorial</h1>
+
+<p>This tutorial is aimed at beginners, but does not explain the basic operations of the tools.
+Along with tips for developing with Unity, we will explain the development flow in the early stages of development, introduce how to use this package, and provide a comprehensive explanation of the concepts behind the program code.</p>
+<h1 id="what-is-garagekit-for-unity">What is GarageKit for Unity？</h1>
+<img src="../image/tutorial/icon.png" width="150px">
+<p>This is a convenient Unity package that provides templates for basic scene state transition functions and can be used as a C# framework along with a number of utility scripts.</p>
+<p>A transition system based on the State pattern, one of the programming design patterns, will be able to handle all kinds of cases by learning the basic rules. It's important to have certain rules in your code. A clean and unified codebase will help reduce bugs and bring order.</p>
+<p>Most of the functionality is a single component that follows the Unity MonoBehaviour lifecycle and works simply by attaching a script to a GameObject. Since it is a thin framework layer, it is easy to use it in combination with other assets.</p>
+<p>As the name suggests, it is a tool to accelerate the start of your project!</p>
+<h1 id="1-preparation">1. Preparation</h1>
+<h2 id="1-1-create-a-project">1-1. Create a project</h2>
+<p>Create a new project.</p>
+<h2 id="1-2-packagemanager-settings">1-2. PackageManager settings</h2>
+<p>When using GarageKit, you will need to import several dependent libraries.
+(There is no problem even after importing GarageKit.unitypackage.)</p>
+<p>Open Window/PackageManager from the menu.</p>
+<p><img src="../image/tutorial/package_manager.png" alt=""></p>
+<p>You can remove unnecessary packages first. It's a good idea to add it whenever you need it.</p>
+<ul>
+<li>Unity comes with a lot of imports in its initial state. It is also related to build capacity, etc., so try to delete unnecessary packages as much as possible. In some cases, you may run into problems caused by unnecessary packages.</li>
+<li><code>UnityUI</code>, <code>TextMeshPro</code> and <code>VisualStudioEditor</code> are all you need to get started. (Dependent packages are automatically imported.)</li>
+</ul>
+<p>If the following packages are not already imported into the project, import them.</p>
+<ul>
+<li>from UnityRegistry
+<ul>
+<li><code>TextMeshPro</code>: Package for handling text display in uGUI.</li>
+</ul>
+</li>
+<li>from AssetStore
+<ul>
+<li><code>DOTween</code>: Animation script package (Free).
+<ul>
+<li><a href="https://id.unity.com/en/conversations/cdefce43-9b11-49c5-9c4a-d3a63e30674000bf">https://id.unity.com/en/conversations/cdefce43-9b11-49c5-9c4a-d3a63e30674000bf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-3-openupm">1-3. OpenUPM</h2>
+<p>Next, import the following packages from <code>OpenUPM</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>OpenUPM</code>: An open source package manager/registry for Unity libraries. If you have never used it, take this opportunity to learn how to use it.
+<a href="https:/openupm.com/docs/getting-started-cli.html">https:/openupm.com/docs/getting-started-cli.html</a></p>
+</div>
+<ul>
+<li><code>In-game Debug Console</code>: A package that displays the runtime console at runtime, mainly for debugging purposes.
+<ul>
+<li><a href="https:/openupm.com/packages/com.yasirkula.ingamedebugconsole/">https:/openupm.com/packages/com.yasirkula.ingamedebugconsole/</a></li>
+</ul>
+</li>
+<li><code>UniTask</code>: A package that makes it easier to handle C# asynchronous processing with Unity.
+<ul>
+<li><a href="https:/openupm.com/packages/com.cysharp.unitask/">https:/openupm.com/packages/com.cysharp.unitask/</a></li>
+</ul>
+</li>
+</ul>
+<p>Open (Win)CommandPrompt/(Mac)Terminal, change to the project directory, and run the <code>openupm</code> command for the above two packages.
+Clicking the button at the top right of the site copies the necessary commands to the clipboard, which is convenient. Just paste it and run it.</p>
+<p><img src="../image/tutorial/openupm.png" alt=""></p>
+<p>Return to Unity and check the Project window.</p>
+<h3 id="about-the-packages-directory">About the Packages directory</h3>
+<p>Packages imported with PackageManager or OpenUPM are managed as a Packages directory, separate from project data.</p>
+<img src="../image/tutorial/project_window_packages.png" width="300px">
+<p>You cannot edit external packages that are managed in the Packages directory yourself. This is safe in that you cannot break the external package's source code. In addition, if you need to move your work PC environment, or when you pass project data to someone else, when restoring project data, being able to download the specified package means that you will always be able to reproduce the environment.</p>
+<p>Of course, there are times when modifications are absolutely necessary. In this case, you can edit the package data by manually importing it into the project and managing it without using PackageManager.</p>
+<h2 id="1-4-importing-garagekit-package">1-4. Importing GarageKit package</h2>
+<p>Now, drag and drop <code>GarageKit.unitypackage</code> into the Project window to import it.</p>
+<img src="../image/tutorial/project_window_imported.png" width="300px">
+<p>Once the import is complete, you may see errors depending on your project settings environment. Let's fix it by changing the project settings.</p>
+<p><img src="../image/tutorial/import_error.png" alt=""></p>
+<p>Open File/BuildSetting from the menu and set TargetPlatform to <code>Windows</code>.</p>
+<p>Open File/BuildSetting/PlayerSetting from the menu and change ApiCompatibilityLevel to <code>.NET Framework</code> from the Configuration item.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The sources where the error is displayed are SerialPortController.cs and StandalonePlayerResolutionHelper.cs. This error is displayed because <code>.NET Standard 2.1</code> does not include the classes required for compilation.</p>
+</div>
+<h2 id="1-5-organizing-the-project-structure">1-5. Organizing the project structure</h2>
+<p>Once the error is resolved, check the Project window again.</p>
+<p>Manually imported data is added in folders. The sample scene data that is automatically created when the project is initially created is unnecessary, so delete the entire Scenes folder.</p>
+<img src="../image/tutorial/project_window_initial.png" width="300px">
+<p>All project data will be managed in this Project window. This window shows the status of files in the actual directory.</p>
+<p>With a file selected in the Project window, you can open it in the OS's file browser from the right-click menu (Win)Show in Explorer/(Mac)Reveal in Finder. Please check the actual folder location.</p>
+<p><img src="../image/tutorial/project_directory.png" alt=""></p>
+<p>Return to Unity and rename the <code>__ProjectName__</code> folder to your working project name. **Please rename in the Project window. **</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Leaving <code>__</code> is recommended, but optional. This is an effective way to make your project data folder easier to find so it doesn't get buried under other folders. ProjectWindow automatically sorts by name.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Also, please refrain from using Japanese file names in all subsequent development work. ** Japanese characters (multi-byte characters) are still second-class citizens when it comes to programming and may cause problems.</p>
+</div>
+<img src="../image/tutorial/project_window_prjname.png" width="300px">
+<p>The first level under the Assets folder is an important starting point for data organization.</p>
+<p>Normally, by the end of a project, all kinds of data has been incorporated into the project, so if you work without a strategy, the project folder can easily become chaotic. (This may not be a problem during the most recent work. Will you be able to understand it immediately when you open the data for the first time after a long time? What will happen if someone else takes over the project data?)</p>
+<p>Other folders are already expanded under the Assets folder. If you manually import an external .unitypackage, the data will most likely be expanded to the first level. Well-behaved packages are often grouped together in one folder, so a folder for each import package is naturally created in the first level under the Assets folder.</p>
+<p>If you consider the project data folder <code>__ProjectName__</code> as one of the packages, the rules for data organization will become clear. From now on, when importing external .unitypackages, make sure to manage them in separate folders on the first level.</p>
+<p>The first layer under the current Assets folder has the following folder structure.</p>
+<pre><code class="lang-shell">Assets
+|- __TestProject__  : project data
+|- StreamingAssets  : Unity standard external file loading folder
+</code></pre>
+<p>We have prepared folders in advance for various data used within the project. Make sure to organize your data here and always know where your data is in your project.</p>
+<pre><code class="lang-shell">Assets
+|- __TestProject__
+    |- Animations   : for animation data (.anim)
+    |- Editor       : for editor script
+    |- Fonts        : for font data (.otf .ttf ...)
+    |- Materials    : for materiak data (.mat)
+    |- Meshes       : for mesh data (.mesh)
+    |- Models       : for 3D model data (.fbx ...)
+    |- Plugins      : for plugin data (.dll ...)
+    |- Prefabs      : for prefab data
+    |- Scenes       : for scene data (.unity)
+    |- Scripts      : for runtime script (.cs)
+    |- Shaders      : for shader (.shader ...)
+    |- Sounds       : for sound data (.wav .mp3 ...)
+    |- Textures     : for texture data (.png .jpg ...)
+</code></pre>
+<p>Remember that organizing data and information well is the basis of programming.</p>
+<p>Even the &quot;programming design patterns&quot; that you often hear about in programming are fundamentally about how to organize source code. How should I organize and structure it? This is a knowledge that makes it easier to think about the structure, and as a result, it leads to a method of building programs that are easier to modify and expand.</p>
+<h3 id="about-special-folders">About special folders</h3>
+<p>In Unity, there are some folders that have special names that are reserved in advance. The <code>StreamingAssets</code> folder is one of them.
+Some of the things you often see are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">folder name</th>
+<th style="text-align: left;">function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">StreamingAssets</td>
+<td style="text-align: left;">Unity standard folder for reading external files. During build, the original file is automatically copied and packaged.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resources</td>
+<td style="text-align: left;">Packaged as compiled data when built. This is an old feature and its use is not recommended.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Editor</td>
+<td style="text-align: left;">Place Editor scripts that extend the functionality of UnityEditor itself. The source files inside are automatically compiled and reflected in the Editor immediately.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Plugins</td>
+<td style="text-align: left;">Deploy plugins. In the case of Windows, a general <code>.dll</code> created in C++ or C# can be placed and used by accessing it from the C# code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Plugins / iOS</td>
+<td style="text-align: left;">Built into your Xcode project when targeting iOS.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Plugins / Android</td>
+<td style="text-align: left;">Built into <code>.apk</code> <code>.aab</code> or AndroidStudio project when targeting Android. If <code>AndroidManifest.xml</code> is placed, it can be forcibly overwritten during build post processing.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>There are others as well, so please check the <a href="https:/docs.unity3d.com/ja/2019.4/Manual/SpecialFolders.html">Unity documentation</a>.</p>
+</div>
+<h2 id="1-6-git">1-6. Git</h2>
+<p>It's ready to run. But before you run it and start working on it, use the version control tool <code>Git</code> to commit the latest state. This is one of the most important development tasks.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you don't know how to use Git, first check how to use the basic operations: &quot;initialize a repository,&quot; &quot;staging,&quot; &quot;commit,&quot; and &quot;push&quot;. (Since this is not a Unity operation, the explanation will be omitted.)</p>
+</div>
+<p>In Unity, the ``project folder'' is subject to Git version control, but it is not necessary to manage all data. There is a lot of data that does not need to be managed in the Unity project folder (such as automatically generated caches and intermediate files created at each compile time), and each file size is large, so in order to remove them, you need to set <code>.gitignore</code>.</p>
+<h3 id="git-initial-operation-example">Git initial operation example</h3>
+<ol>
+<li>Initialize the Git repository in the project folder.</li>
+<li>Prepare a <code>.gitignore</code> file and configure the unmanaged folder. Github has sample gitignore for each development environment, so it's easy to copy it as is. It can be used in any development environment, not just Unity.
+<ul>
+<li><a href="https:/github.com/github/gitignore/blob/main/Unity.gitignore">https:/github.com/github/gitignore/blob/main/Unity.gitignore</a></li>
+</ul>
+</li>
+<li>Stage the file and make your first commit.</li>
+</ol>
+<p>Now you can reset your work and come back here at any time. During development, always <code>commit</code> in the middle of each work. Don't forget to <code>push</code> to the remote repository on your server.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Using Git also means data backup. Since you can restore to any working version at any time using Git, the following actions are pointless. If you are doing so, please stop and use Git's features instead.</p>
+<ul>
+<li>Copy the working folder by date name.</li>
+<li>Include past data that will never be used again in the project &quot;just in case&quot;.</li>
+<li>Keep old objects hidden in the scene that are no longer used.</li>
+<li>Keep old unused code in your code.</li>
+</ul>
+</div>
+<h1 id="2-run">2. Run</h1>
+<h2 id="2-1-open-sample-scene">2-1. Open sample scene</h2>
+<p>Open <code>__ProjectName__/Scenes/Main.unity</code>.</p>
+<p>An error will appear because we haven't imported any additional assets for debugging, but you can ignore it for now. Delete the <code>[Graphy] object</code> in the Missing Prefab state under Managers/DebugManager (if necessary, you can use it by downloading it from AssetStore and importing it in advance).</p>
+<ul>
+<li><code>Graphy</code>: A package that allows you to check and display FPS and memory usage during execution.
+<ul>
+<li><a href="https:/assetstore.unity.com/packages/tools/gui/graphy-ultimate-fps-counter-stats-monitor-debugger-105778?locale=ja-JP">https:/assetstore.unity.com/packages/tools/gui/graphy-ultimate-fps-counter-stats-monitor-debugger-105778?locale=ja-JP</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="../image/tutorial/open_main.png" alt=""></p>
+<p>In this scene, the basic things you need have already been set up, and if you have a solid program design, you can start development work right away. This is what is called <code>Scaffolding</code> in the development environment, and it shortcuts the troublesome and troublesome part of the initial work.</p>
+<p>Also, if you are already using Unity, there may be some elements that are unfamiliar to you. The Hierarchy window is lined with icons, which represent the components attached to each GameObject.</p>
+<p>This feature, which allows you to see at a glance what function each GameObject has, is a feature of the Editor extension called <code>EditorEnhancements</code>, which is included in the Editor folder. You can also turn components ON/OFF directly by clicking the icon.</p>
+<p>The Hierarchy window represents the current state of the program. It is important to keep things clear at a glance so you can always understand the status.</p>
+<h2 id="2-2-running-the-sample-scene">2-2. Running the sample scene</h2>
+<p>Let's run the scene.</p>
+<p>This scene is divided into four parts. This scene is called <code>State</code>. The State will transition by pressing the space key. You can check the current status in the text display on the screen.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">No</th>
+<th style="text-align: left;">State name</th>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Process</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Startup</td>
+<td style="text-align: left;">Starting state</td>
+<td style="text-align: left;">Transition to &quot;Wait&quot; immediately after playback.</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Wait</td>
+<td style="text-align: left;">Waiting state</td>
+<td style="text-align: left;">Go to &quot;Play&quot; with space key</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Play</td>
+<td style="text-align: left;">Running state</td>
+<td style="text-align: left;">The timer counts down with the space key and transitions to &quot;Result&quot;.</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Result</td>
+<td style="text-align: left;">Finishing state</td>
+<td style="text-align: left;">Transition to &quot;Wait&quot; with space key</td>
+</tr>
+</tbody>
+</table>
+<p>After confirming the behavior, stop and take a closer look at the scene.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>No matter what stage you are in developing your program, always have something working on hand. The current situation is that you already have something that works. When it comes to program development, you can't go wrong if you think of gradually improving the functionality and completeness of something that already works rather than building things up one by one from scratch.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can build your application at any time to experiment with its release state. One of the important steps is to imagine and confirm the final form at an early stage.</p>
+</div>
+<h1 id="3-scene-composition">3. Scene composition</h1>
+<p>From here, we will explain the overall structure of the current scene, and then proceed by explaining the role of each component and state transitions. Please check the <a href="../Scripts_en/AppMain.html">Script Reference</a> for detailed explanations of each program.</p>
+<img src="../image/tutorial/scene_hierarchy.png" width="300px">
+<h2 id="3-1-system-group">3-1. System group</h2>
+<p>As the name suggests, the group organized by System objects in the Hierarchy contains objects with functions related to the entire project. If you want to add functions that are related to the whole, it would be a good idea to summarize them here as well.</p>
+<h3 id="system--applicationsetting">System / ApplicationSetting</h3>
+<p><a href="../Scripts_en/Utils/Application/ApplicationSetting.html">ApplicationSetting.cs</a></p>
+<p>To change the settings of the built application, you can read an external text file (<code>.xml</code>) and apply it to the program. By default, <code>ApplicationSetting.xml</code> is loaded from the StreamingAssets folder, and the required xml file is already placed in the project when you import the package.</p>
+<p>ApplicationSetting.xml</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;data&gt;
+
+    &lt;!-- debugging true/false --&gt;
+    &lt;item name=&quot;IsDebug&quot; value=&quot;true&quot;/&gt;
+
+    &lt;!-- seconds of game time --&gt;
+    &lt;item name=&quot;GameTime&quot; value=&quot;10&quot;/&gt;
+
+    &lt;!-- display text --&gt;
+    &lt;item name=&quot;Text&quot; value=&quot;this is test.&quot;/&gt;
+
+&lt;/data&gt;
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The item values ​​provided in xml are samples and should be modified as appropriate. <strong>To prevent confusion, be sure to delete unnecessary items that you are not using</strong>. It is also a good idea to add comments such as explanations of setting values ​​and initial values.</p>
+</div>
+<pre><code class="lang-csharp">bool isDebug = ApplicationSetting.Instance.GetBool(&quot;IsDebug&quot;);
+int gameTime = ApplicationSetting.Instance.GetInt(&quot;GameTime&quot;);
+string text = ApplicationSetting.Instance.GetString(&quot;Text&quot;);
+</code></pre>
+<p>Since it exists in the scene as a GameObject, this class itself is a MonoBehaviour that operates independently, and xml is loaded using <code>Awake()</code>. In other words, when using the value, it must be at the timing of <code>Start()</code> transition.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you do not understand the execution order of the functions provided by MonoBehaviour, please check the <a href="https:/docs.unity3d.com/ja/2022.3/Manual/ExecutionOrder.html">Unity documentation</a>.</p>
+</div>
+<p>In addition to the basic types, the values ​​that can be obtained also support arrays and Vector classes, and you can also specify the initial value when there is no value in the xml.</p>
+<p>Due to packaging in .unitypackage files, the default setting of the inspector is to read from <code>STREAMING_ASSETS</code>, but we recommend setting it to <code>PROJECT_DIRECTORY</code>. This is because the StreamingAssets folder hierarchy after building is deep, which is cumbersome when changing the actual values. Of course, after changing the loading location settings, please move the xml file to the appropriate location. If the loading location is <code>PROJECT_DIRECTORY</code>, it is the location where the Assets folder is located, directly under the project folder.</p>
+<h3 id="system--resolutionhelper">System / ResolutionHelper</h3>
+<p><a href="../Scripts_en/Utils/Application/StandalonePlayerResolutionHelper.html">StandalonePlayerResolutionHelper.cs</a></p>
+<p>Built Windows Unity applications save their window resolution information in the registry at runtime. The application window will inherit this value the next time it is started, but if the resolution is unexpectedly changed to the wrong resolution (for example, if the display cable is disconnected), that information will remain in the registry. it will no longer be displayed at the normal resolution.</p>
+<p>To avoid this behavior, which is a Unity specification, this component deletes the resolution information from the registry when the application closes.</p>
+<p>Enter the information along with the build settings (CompanyName/ProductName) in the inspector. Also, this feature is only for Windows and should be removed if you are targeting other platforms as it is not needed.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Please note that this function operates in MonoBehaviour's &quot;OnApplicationQuit()&quot;, so it will only be executed during normal termination processing such as &quot;closing the window&quot; or &quot;calling Application.Quit()&quot;. It will not be executed if it is forcibly terminated from Task Manager, etc. UPS: Windows shutdown commands from uninterruptible power supplies are also not executed.</p>
+</div>
+<h3 id="system--eventsystem">System / EventSystem</h3>
+<p><a href="https:/docs.unity3d.com/ja/2018.4/ScriptReference/EventSystems.EventSystem.html">EventSystem</a></p>
+<p>This is a standard Unity system object that drives operation event processing in uGUI.</p>
+<h2 id="3-2-managers-group">3-2. Managers group</h2>
+<p>This is a group of objects that control the basis of this framework. Please understand that normally there is no need for manager classes other than those provided here.</p>
+<p>When developing a program, it is easy to create a &quot;XXX manager&quot; that has functions for managing various behaviors, but we have already prepared enough manager classes and necessary functions here. Basically, no other manager class is required.</p>
+<p>If you create an additional manager class, if you carefully review and consider the functional structure, you should realize that the class does not need to be a manager. Every class in a program has its own scope of work and is worth programming to perfectly accomplish only its own work.</p>
+<p>No need for unnecessary external management. Let's consider a managerial position in a real business organization. Are you managing every detail? How many managers do you have?The organization runs as long as each staff member fulfills their role. The programs must be the same.</p>
+<h3 id="managers-appmain">Managers [AppMain]</h3>
+<p><a href="../Scripts_en/AppMain.html">AppMain.cs</a></p>
+<p><code>AppMain.cs</code>, attached to <code>/Managers</code>, is the most important component within this framework.
+Among the programming design patterns, the singleton pattern instantiates a manager class as the only one in the application, and is responsible for the only access route to each manager class.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>There is a general opinion that using singletons is not a good idea. Of course, you should not use careless global reference variables without planning. In any case, you should consider the purpose and usage and consider the best method.</p>
+</div>
+<h3 id="managers--scenestatemanager">Managers / SceneStateManager</h3>
+<p><a href="../Scripts_en/Managers/SceneStateManager.html">SceneStateManager.cs</a></p>
+<p>This is a manager class that manages the state. Performs state transition processing within the application. Implemented with state pattern.</p>
+<pre><code class="lang-csharp">// StateBase class: Normal state changing.
+AppMain.Instance.sceneStateManager.ChangeState(&quot;PLAY&quot;);
+
+// AsyncStateBase class: State changin with fade.
+AppMain.Instance.sceneStateManager.ChangeAsyncState(&quot;PLAY&quot;);
+</code></pre>
+<p>By calling as above, you can execute State transition processing, and at runtime, you can check the current State by checking the object name of SceneStateManager in the Hierarchy window. (Displayed within <code>[ ]</code>)</p>
+<img src="../image/tutorial/scenestatemanager_run.png" width="300px">
+<p>At the beginning of the sample scene, four states were prepared.</p>
+<p>Prepare the State as a GameObject and place it under the SceneStateManager. Each State class that inherits the StateBase class is attached to the State GameObject in advance, and the following transition table information is set in the SceneStateManager inspector.</p>
+<img src="../image/tutorial/scenestatemanager_inspector.png" width="300px">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">parameter</th>
+<th style="text-align: left;">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">StateName</td>
+<td style="text-align: left;">State name for invocation</td>
+</tr>
+<tr>
+<td style="text-align: left;">StateObj</td>
+<td style="text-align: left;">Reference to State object</td>
+</tr>
+<tr>
+<td style="text-align: left;">AsInitial</td>
+<td style="text-align: left;">Initial transition flag</td>
+</tr>
+</tbody>
+</table>
+<p>Let's take a look at the implementation within each State class.（StartupState.cs / WaitState.cs / PlayState.cs / ResultState.cs）</p>
+<p>If you inherit the StateBase class, you can define and use the following functions.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Method</th>
+<th style="text-align: left;">Timing to be called</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">StateStart()</td>
+<td style="text-align: left;">The first time after every transition to the next state after calling ChangeState().</td>
+</tr>
+<tr>
+<td style="text-align: left;">StateUpdate()</td>
+<td style="text-align: left;">Every frame after calling ChangeState() and transitioning to the next state.</td>
+</tr>
+<tr>
+<td style="text-align: left;">StateExit()</td>
+<td style="text-align: left;">Immediately before transitioning from the current state after calling ChangeState().</td>
+</tr>
+<tr>
+<td style="text-align: left;">StateExitAsync()</td>
+<td style="text-align: left;">Immediately before transitioning from the current state after the fade is completed after calling ChangeAsyncState().</td>
+</tr>
+</tbody>
+</table>
+<p>These functions in the State class are called at specific times managed and controlled by the SceneStateManager, so they do not interfere with the basic functionality of MonoBehaviours such as <code>Awake()</code> <code>Start()</code> <code>Update()</code> Can be used in combination.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you do not understand the functions provided by MonoBehaviour, please check the <a href="https:/docs.unity3d.com/ja/2021.1/ScriptReference/MonoBehaviour.html">Unity documentation</a>.</p>
+</div>
+<p>Also, when using this SceneStateManager, the first program entry point in the application is StateStart() of the State with <code>AsInitial</code> enabled. Defaults to StateStart() of StartupState. The flow is that from AppMain's Start(), <code>WaitForEndOfFrame()</code> calls SceneStateManager's InitState() at the final timing of the 0th frame, and the initial State's StateStart() is started.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<h4 id="about-startupstate">About StartupState</h4>
+<p>This is the initial State that transitions first in the application, but nothing is implemented in <code>StateStart()</code> in StartupState.cs, and you can see that it immediately transitions to the next State. As mentioned in the comments in the source, please do not delete this State even if you think it is unnecessary. We recommend that you use it as is unless there are any particular problems.</p>
+<p>For example, suppose sometime in the future your application requires additional initialization processing before it starts. If you use a sensor, you will need to wait for the sensor device to complete startup. You may want to communicate and wait for the application to initialize with the result of an API request. Having this StartupState creates place for expansion.</p>
+</div>
+<p>Now, let's consider the program structure without using State.</p>
+<p>For example, suppose you have multiple objects whose behavior needs to be switched in each scene. A possible configuration is that each manages multiple flags within <code>Update()</code> and branches using if statements. Each <code>Update()</code> within each object performs the switching process using similar flag management.</p>
+<p>You can easily imagine that the written parts of the code will be scattered in different files and locations, making management complicated. The state pattern is a design pattern for this kind of switching process. A class called State that represents a state allows processing to be grouped together using a horizontal common denominator. This method provides a nice place to organize your code.</p>
+<p>The explanation of SceneStateManager has become a bit long, but I will explain another important function, <code>Context</code>.</p>
+<pre><code class="lang-csharp">// StateBase class: Normal state changing and context
+AppMain.Instance.sceneStateManager.ChangeState(&quot;PLAY&quot;, context);
+
+// AsyncStateBase class: State changing with fade and context
+AppMain.Instance.sceneStateManager.ChangeAsyncState(&quot;PLAY&quot;, context);
+</code></pre>
+<p>You can pass a <code>System.Object context</code> to the second argument of ChangeState()/ChangeAsyncState(), and the passed State can receive and manipulate data in StateStart().</p>
+<pre><code class="lang-csharp">public class PlayState : StateBase
+{
+    public override void StateStart(object context)
+    {
+        base.StateStart(context);
+
+        // cast and use
+        string test = (string)context;
+    }
+}
+</code></pre>
+<p>Since data can be passed between States, there is no need to prepare a GameObject for data storage or a separate reference destination for public data (avoid holding global static data).</p>
+<p>When is this Context feature useful? Imagine debugging a program built using this State pattern.</p>
+<p>For debugging, it is necessary to transition to the desired state. Is it necessary to perform an operation to transition sequentially from the beginning? NO. If the state is simply transitioning, it is &quot;a state that does not depend between states&quot;, so debugging can be done more efficiently by directly transitioning to the target state.</p>
+<p>So, what if you need to create some necessary state in the middle (for example, check a checkbox) and make a transition? This is the case when each State creates the necessary State and transitions. This can be said to be a &quot;dependent State between State&quot;.</p>
+<p>In this state, the dependency can be resolved by passing the Context. Specifically, by creating a data type class and passing the data type class that reflects state information using Context, each StateStart() can initialize with that data and reproduce the state.</p>
+<p>In any case, this method can be executed from an intermediate state by simply calling <code>new()</code> and passing in the data type class. This means that each state must start initializing on every StateStart(), relying only on the context passed from the previous state, regardless of the order of transitions. You will now be able to start your applications correctly every time.</p>
+<p>Here are some tips for development work.</p>
+<p>Before you start development work, make a list of the required features. Also, let's organize the application status by scene. Once you have roughly divided and organized the scene, apply it to the State.</p>
+<p>Isn't the program structure starting to be organized? This work is program design.</p>
+<h3 id="managers--timemanager">Managers / TimeManager</h3>
+<p><a href="../Scripts_en/Managers/TimeManager.html">TimeManager.cs</a></p>
+<p>This is a manager class that manages timer events over time. By default, a timer called MainTimer (TimerEvent class) is provided and registered.</p>
+<img src="../image/tutorial/timemanager_hierarchy.png" width="300px">
+<br>
+<br>
+<img src="../image/tutorial/timemanager_inspector.png" width="300px">
+<p>In your code, you can set the event and start the timer using the following method.
+Add timers as needed. Please be careful as increasing the number of timers will make starting/resetting them difficult to manage. You may also want to consider ways to reuse the same timer.</p>
+<pre><code class="lang-csharp">// Set the timer completion event. Note that += adds an event each time it is called.
+AppMain.Instance.timeManager.mainTimer.OnCompleteTimer += (sender) =&gt; { Debug.Log(&quot;OnCompleteTimer&quot;); };
+
+// Set a timer event every second. Note that += adds an event each time it is called.
+AppMain.Instance.timeManager.mainTimer.OnTimer += (sender, sec) =&gt; { Deug.Log(&quot;OnTimer:&quot; + sec.ToString()); };
+
+// Start timer. You can also specify seconds and repeat settings.
+AppMain.Instance.timeManager.mainTimer.StartTimer(10);
+</code></pre>
+<h3 id="managers--soundmanager">Managers / SoundManager</h3>
+<p><a href="../Scripts_en/Managers/SoundManager.html">SoundManager.cs</a></p>
+<p>This is a manager class that collectively manages sounds within an application.</p>
+<p>In general, sound management in Unity tends to be complicated. The reason for this is that the AudioSource components that play the sound are created and placed for each sound material, so they are managed in different locations because they are played and managed individually.</p>
+<p>This manager class provides simple sound playback management by consolidating all settings into one place.</p>
+<img src="../image/tutorial/soundmanager.png" width="300px">
+<p>It has the concept of layers and clips, and layers can be set for each audio group, and the audio volume can be set for each layer. Also, set the layer name to be recalled during playback. Set the actual audio material for the clip, and set the clip name in the same way.</p>
+<p>The code is played as shown below, and by default it is played with overlap settings. When playing background music, you can also specify loop playback using arguments.</p>
+<pre><code class="lang-csharp">// Normal playback
+AppMain.Instance.soundManager.Play(&quot;SE&quot;, &quot;CLICK&quot;);
+
+// Loop playback without overlap
+AppMain.Instance.soundManager.Play(&quot;BGM&quot;, &quot;CLIP&quot;, false, true);
+</code></pre>
+<p>The AudioSource required for playback is automatically generated and managed internally, so you can easily play it without worrying about anything. 3D Layer also requires placement information for 3D audio settings, so you can set up a GameObject with your own AudioSource.</p>
+<h3 id="managers--userinputmanager">Managers / UserInputManager</h3>
+<p><a href="../Scripts_en/Managers/UserInputManager.html">UserInputManager.cs</a></p>
+<p>This is a manager class that aggregates user input processing. We have provided some general-purpose key inputs, but if you need other inputs, you can add them to this class to consolidate input processing in one place and improve the visibility of your program. Masu. The preset key inputs are as follows.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">key</th>
+<th style="text-align: left;">function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Esc</td>
+<td style="text-align: left;">Quit application.</td>
+</tr>
+<tr>
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">Toggle debugging features.</td>
+</tr>
+<tr>
+<td style="text-align: left;">R</td>
+<td style="text-align: left;">Reload ApplicationSetting.xml</td>
+</tr>
+<tr>
+<td style="text-align: left;">Backspace</td>
+<td style="text-align: left;">Take a screenshot of the current GameView and save it to your desktop.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If keyboard input operations are required, such as entering a name, it must be disabled.</p>
+</div>
+<h3 id="managers--debugmanager">Managers / DebugManager</h3>
+<p><a href="../Scripts_en/Managers/DebugManager.html">DebugManager.cs</a></p>
+<p>Manage debugging functionality within your application. Specifically, this manager class has a debug state flag <code>isDebug</code>, and each debug function is managed by this flag.</p>
+<pre><code class="lang-csharp">if(AppMain.Instance.debugManager.isDebug)
+    Debug.Log(&quot;debug mode&quot;);
+else
+    Debug.Log(&quot;not debug mode&quot;);
+</code></pre>
+<p>The initial setting of this flag can be changed using the <code>IsDebug</code> item in ApplicationSetting.xml, and the debug state can be toggled by pressing the <code>D</code> key using the UserInputManager.</p>
+<img src="../image/tutorial/debugmanager.png" width="300px">
+<p>Since the external package IngameDebugConsole is pre-installed, it is displayed in synchronization with the debugging state (the same is true when using the Graphy package). When adding other debugging features, it is a good idea to use a similar implementation and manage them using <code>isDebug</code>.</p>
+<p>This GameObject also has a <code>VisibleMouseCursor.cs</code> component attached to it, which shows/hides the mouse cursor. You can set the display state with the <code>UseMouse</code> item in ApplicationSetting.xml. Mouse cursor display is not necessary in touch panel applications, but it is needed during debugging, so this manager class is responsible for display management.</p>
+<h2 id="3-3-cameras-group">3-3. Cameras group</h2>
+<p>A group that organizes camera objects. We recommend adding the Depth parameter value to the beginning of the camera object's object name, as this makes the rendering order clear at a glance. It's a simple rule, but since it can be checked immediately at any time, it can be difficult to make mistakes in settings.</p>
+<p>Don't forget to keep yourself organized with a clear Hierarchy window that represents the current state of your application.</p>
+<p>Also, make sure that each camera object has a <code>CameraGizmoDrawer.cs</code> component attached. This component draws a view frustum representing the camera's field of view in the Editor's Scene view display. In normal Unity, the viewing frustum is drawn only for the selected camera, but it will now be drawn even when it is not selected, making it easier to check the current state of the scene.</p>
+<h2 id="3-4-environments-guis-objects-group">3-4. Environments, GUIs, Objects group</h2>
+<p>Other groups are placeholders. It is a good idea to organize Light objects etc. into &quot;Environments&quot;, GUI related objects into &quot;GUIs&quot;, and 3D models etc. into &quot;Objects&quot;.</p>
+<p>Again, keeping your data organized is important and will directly lead to structured and bug-free programs. Also, use the Hierarch window, which allows you to visually manage the state of a running program, to always keep track of data and objects where you can see them. will assist you.</p>
+<h1 id="4-in-project-resources">4. In-project resources</h1>
+<p>This section explains the resources in the project data.</p>
+<h2 id="4-1--editor">4-1. / Editor</h2>
+<h3 id="assetpostprocessutf8encodecs">AssetPostprocessUTF8Encode.cs</h3>
+<p>Editor extension. Checks the text encoding of all .cs files imported into the project and automatically converts them to UTF8 (BOM). This is to prevent Japanese characters from being garbled if the source code file is not UTF8(BOM) encoded.</p>
+<h3 id="editorenhancements">EditorEnhancements</h3>
+<p>Editor extension. Displays component icons in the Hierarchy window. There are also some helper functions, such as displaying file extensions in the Project window, which can be enabled or disabled from the Preference settings in the menu.</p>
+<h3 id="stategenerator">StateGenerator</h3>
+<p>Editor extension. This is a helper function that can be used when creating a new State class. Available from the menu: <code>EditorScript/GarageKit/StateGenerator</code>.</p>
+<h2 id="4-2--plugins">4-2. / Plugins</h2>
+<h3 id="i18ncjkdll">I18N.CJK.dll</h3>
+<p>Managed (for C#) DLL for handling Japanese code <code>Shift_JIS</code> in C#.</p>
+<h3 id="log4net">Log4Net</h3>
+<p>This is an asset that makes Log4Net, a C# logging library, compatible with Unity. Normally, when using Log4Net, detailed settings are required, but all of them are hidden inside, so you can use it just by placing the Log4Net prefab in the folder in the scene. The output log will be created in a <code>Log folder</code> directly under the project folder and saved as a daily file.</p>
+<pre><code class="lang-csharp">// Also output to Debug.Log at the same time
+Log4Net.Logger.Log(LOG_LEVEL.INFO, &quot;メッセージ&quot;);
+</code></pre>
+<h3 id="microsoftwin32registrydll">Microsoft.Win32.Registry.dll</h3>
+<p>This is the dll used by StandalonePlayerResolutionHelper.cs explained in <code>3-1. System / ResolutionHelper</code> to access the registry.</p>
+<h2 id="4-3--prefabs">4-3. / Prefabs</h2>
+<h3 id="utils--ui--moviecontrollpanel">Utils / UI / MovieControllPanel</h3>
+<p>This is a prefab for easily setting up a control panel for video playback. To use it, you will need the external package <a href="https://assetstore.unity.com/packages/tools/video/avpro-video-v3-ultra-edition-278896">AVProVideo</a>. Also, please enable the #define definition in the <code>Scripts/Utils/UI/UIMovieControllPanel.cs</code> source code and then configure the prefab inspector settings.</p>
+<h3 id="utils--vr_ui--canvasgroupguidearrow">Utils / VR_UI / CanvasGroupGuideArrow</h3>
+<p>Prefab for displaying arrows when guiding the line of sight in VR, etc.</p>
+<h3 id="utils--vr_ui--canvasgrouptelop">Utils / VR_UI / CanvasGroupTelop</h3>
+<p>Prefab to easily fade in and out text captions in VR, etc.</p>
+<h2 id="4-4--scenes">4-4. / Scenes</h2>
+<p>The framework of this package basically assumes a work flow in which <code>Main.unity</code> is customized.</p>
+<p>Lighting data associated with the scene file (data when baking with lighting settings) is automatically created in the same layer as the scene file, so it is a good idea to organize them here.</p>
+<h3 id="examples">Examples</h3>
+<p>You can see examples of how to use each script in the sample scenes.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Scene</th>
+<th style="text-align: left;">Content</th>
+<th style="text-align: left;">Script using</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ApplicationSettingExample</td>
+<td style="text-align: left;">Sample of external configuration file.</td>
+<td style="text-align: left;">ApplicationSetting.cs</td>
+</tr>
+<tr>
+<td style="text-align: left;">CameraControllExample</td>
+<td style="text-align: left;">Sample of camera operation.</td>
+<td style="text-align: left;">FlyThroughCamera.cs<br>PinchZoomCamera.cs<br>OrbitCamera.cs<br>UrbanViewerLikeCamera.cs<br>Panorama360Camera.cs</td>
+</tr>
+<tr>
+<td style="text-align: left;">MultipleSceneExample</td>
+<td style="text-align: left;">Sample for changing SceneStateManager settings and using multiple scenes.</td>
+<td style="text-align: left;">SceneStateManager.cs</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventExample</td>
+<td style="text-align: left;">Sample of each event processing.</td>
+<td style="text-align: left;">TimelineEventActionList.cs<br>TimerEvent.cs<br>ButtonObjectEvent.cs<br>SevenTapLikeAndroid.cs</td>
+</tr>
+<tr>
+<td style="text-align: left;">LogExample</td>
+<td style="text-align: left;">Sample log output.</td>
+<td style="text-align: left;">Log4Net.cs</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimelinedStateExample</td>
+<td style="text-align: left;">Sample state using time-controlled timeline.</td>
+<td style="text-align: left;">TimelinedSceneStateBase.cs</td>
+</tr>
+<tr>
+<td style="text-align: left;">VRGuiExample</td>
+<td style="text-align: left;">Sample of VR_UI prefab usage.</td>
+<td style="text-align: left;">UIFadeTelop.cs<br>VRGazeGuideArrow.cs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-5--scripts">4-5. / Scripts</h2>
+<p>The Utils folder contains useful scripts for this package. For details of each script, please refer to <a href="../Scripts_en/AppMain.html">Script Reference</a>.</p>
+<p>It's a good idea to create and organize folders by functional category of scripts or by <code>namespace</code> in C# (not a folder hierarchy = namespace like in Java).</p>
+<h2 id="4-6--shaders">4-6. / Shaders</h2>
+<p>The <code>/ShaderLib</code> folder contains custom shaders, and they are listed under <code>Custom/ShaderLib</code> from the shader selection in material settings. We have made it possible to determine the function by the shader name, but we will introduce the ones that are relatively easy to use.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Shader</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Unlit-MaterialAlpha</td>
+<td style="text-align: left;">No lighting effects, texture colors based on color values ​​are displayed as is.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unlit-CombineAlpha</td>
+<td style="text-align: left;">Texture for alpha can be added to Unlit-MaterialAlpha.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unlit-SeparateAlpha</td>
+<td style="text-align: left;">Texture for alpha can be set as a separate image in Unlit-MaterialAlpha.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectMask</td>
+<td style="text-align: left;">Clear the previously drawn color buffer by drawing the 3D mesh &quot;Transparent&quot;.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ShadowPlane</td>
+<td style="text-align: left;">Draw only the shadow cast by the light.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Contrast</td>
+<td style="text-align: left;">Perform level correction on the set texture and adjust contrast.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-7--textures">4-7. / Textures</h2>
+<p>Frequently used images such as test patterns are available.</p>
+<h2 id="4-8-streamingassets--unityresolutionresetexe">4-8. StreamingAssets / UnityResolutionReset.exe</h2>
+<p>This is an .exe file that extracts the internal functions of StandalonePlayerResolutionHelper.cs explained in <a href="#3-1-system-group">3-1. System / ResolutionHelper</a> so that it can be executed independently. You can forcibly delete resolution information from the registry by running it on the command line.</p>
+<p>How to run</p>
+<pre><code class="lang-shell">$ UnityResolutionReset.exe {CompanyName} {ProductName}
+</code></pre>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

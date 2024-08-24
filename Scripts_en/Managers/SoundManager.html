@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>SoundManager | Project Starter Package Doc </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="SoundManager | Project Starter Package Doc ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="soundmanager">SoundManager</h1>
+
+<p>Manage sound features. The AudioSource required for playback is automatically generated and managed internally.</p>
+<pre><code class="lang-csharp">namespace GarageKit
+public class SoundManager : ManagerBase
+</code></pre>
+<h4 id="inheritance">Inheritance</h4>
+<p><code>SoundManager</code> -&gt; <a href="../Utils/Manager/Base/ManagerBase.html">ManagerBase</a> -&gt; <code>MonoBehaviour</code></p>
+<h4 id="inspector">Inspector</h4>
+<img src="../../image/script_reference/soundmanager_inspector.png" width="500px">
+<h4 id="properties">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">soundLayers</td>
+<td style="text-align: left;">List&lt;<a href="#soundlayerdata">SoundLayerData</a>&gt;</td>
+<td style="text-align: left;">Sound setting</td>
+</tr>
+<tr>
+<td style="text-align: left;">soundLayers3D</td>
+<td style="text-align: left;">List&lt;<a href="#sound3dlayerdata">Sound3DLayerData</a>&gt;</td>
+<td style="text-align: left;">3D Sound setting</td>
+</tr>
+<tr>
+<td style="text-align: left;">SoundLayers</td>
+<td style="text-align: left;">Dictionary&lt;string, <a href="#soundlayerdata">SoundLayerData</a>&gt;</td>
+<td style="text-align: left;">Table with sound layer names</td>
+</tr>
+<tr>
+<td style="text-align: left;">SoundLayers3D</td>
+<td style="text-align: left;">Dictionary&lt;string, <a href="#sound3dlayerdata">Sound3DLayerData</a>&gt;</td>
+<td style="text-align: left;">Table with 3D sound layer names</td>
+</tr>
+<tr>
+<td style="text-align: left;">masterMixerGroup</td>
+<td style="text-align: left;">AudioMixerGroup</td>
+<td style="text-align: left;">Option: Master mixer group</td>
+</tr>
+<tr>
+<td style="text-align: left;">decibelByStep</td>
+<td style="text-align: left;">AnimationCurve</td>
+<td style="text-align: left;">Option: Master volume step adjustment curve</td>
+</tr>
+</tbody>
+</table>
+<h4 id="methods">Methods</h4>
+<p>Add sound layer</p>
+<pre><code class="lang-csharp">public void AddLayer(SoundLayerData layer)
+</code></pre>
+<p>Add AudioClip to sound layer</p>
+<pre><code class="lang-csharp">public void AddClip(string layerName, string clipName, AudioClip clip)
+</code></pre>
+<p>Sound playback</p>
+<pre><code class="lang-csharp">public void Play(string layerName, string clipName, bool overlap = false)
+public void Play(string layerName, string clipName, bool overlap, bool loop, bool asOneShot)
+</code></pre>
+<p>Playback status of the sound layer</p>
+<pre><code class="lang-csharp">public bool IsPlay(string layerName)
+</code></pre>
+<p>Stop sound playback</p>
+<pre><code class="lang-csharp">public void Stop(string layerName = &quot;&quot;)
+</code></pre>
+<p>Stop playing all sounds</p>
+<pre><code class="lang-csharp">public void StopAll(string layerName = &quot;&quot;)
+</code></pre>
+<p>Add 3D sound layer</p>
+<pre><code class="lang-csharp">public void AddLayer3D(Sound3DLayerData layer)
+</code></pre>
+<p>3D 音声レイヤーに 3D 音声ソースの追加
+Add 3D AudioSource to 3D sound layer</p>
+<pre><code class="lang-csharp">public void AddSource3D(string layerName, string sourceName, AudioSource source)
+</code></pre>
+<p>3D sound playback</p>
+<pre><code class="lang-csharp">public void Play3D(string layerName, string sourceName, bool overlap = false)
+public void Play3D(string layerName, string sourceName, bool overlap, bool loop, bool asOneShot)
+</code></pre>
+<p>Playback status of the 3D sound layer</p>
+<pre><code class="lang-csharp">public bool IsPlay3D(string layerName, string sourceName)
+</code></pre>
+<p>Stop 3D sound playback</p>
+<pre><code class="lang-csharp">public void Stop3D(string layerName = &quot;&quot;, string sourceName = &quot;&quot;)
+</code></pre>
+<p>Stop playing all 3D sounds</p>
+<pre><code class="lang-csharp">public void Stop3DAll(string layerName = &quot;&quot;)
+</code></pre>
+<p>Fade in all sounds</p>
+<pre><code class="lang-csharp">public void FadeInAllSound(float time = 1.0f)
+</code></pre>
+<p>Fade out all sounds</p>
+<pre><code class="lang-csharp">public void FadeOutAllSound(float time = 1.0f)
+</code></pre>
+<p>Fade of specified sound</p>
+<pre><code class="lang-csharp">public void Fade(string layerName, float fromVol, float toVol, float time)
+</code></pre>
+<p>Fade of specified 3D sound</p>
+<pre><code class="lang-csharp">public void Fade3D(string layerName, string sourceName, float fromVol, float toVol, float time)
+</code></pre>
+<p>Setting the master volume</p>
+<pre><code class="lang-csharp">public void SetMasterVol(float vol, string exposeProperty = &quot;MasterVolume&quot;)
+</code></pre>
+<p>Master volume step up one</p>
+<pre><code class="lang-csharp">public void MasterVolUp(string exposeProperty = &quot;MasterVolume&quot;)
+</code></pre>
+<p>Master volume step down one</p>
+<pre><code class="lang-csharp">public void MasterVolDown(string exposeProperty = &quot;MasterVolume&quot;)
+</code></pre>
+<h4 id="example">Example</h4>
+<pre><code class="lang-csharp">// Normal playback
+AppMain.Instance.soundManager.Play(&quot;SE&quot;, &quot;CLICK&quot;);
+
+// Loop playback without overlap
+AppMain.Instance.soundManager.Play(&quot;BGM&quot;, &quot;CLIP&quot;, false, true);
+</code></pre>
+<hr>
+<h1 id="soundclipdata">SoundClipData</h1>
+<p>Clip information structure</p>
+<pre><code class="lang-csharp">namespace GarageKit
+[Serializable]
+public class SoundClipData
+</code></pre>
+<h4 id="properties-1">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">clipName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Clip name</td>
+</tr>
+<tr>
+<td style="text-align: left;">clip</td>
+<td style="text-align: left;">AudioClip</td>
+<td style="text-align: left;">AudioClip reference</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="sounddata">SoundData</h1>
+<p>Sound information structure</p>
+<pre><code class="lang-csharp">namespace GarageKit
+[Serializable]
+public class SoundData
+</code></pre>
+<h4 id="properties-2">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">use</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Use it or not</td>
+</tr>
+<tr>
+<td style="text-align: left;">volume</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">Sound volume</td>
+</tr>
+<tr>
+<td style="text-align: left;">clips</td>
+<td style="text-align: left;">List&lt;<a href="#soundclipdata">SoundClipData</a>&gt;</td>
+<td style="text-align: left;">Clip information list</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="soundlayerdata">SoundLayerData</h1>
+<p>Layer information structure</p>
+<pre><code class="lang-csharp">namespace GarageKit
+[Serializable]
+public class SoundLayerData
+</code></pre>
+<h4 id="properties-3">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">layerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Layer name</td>
+</tr>
+<tr>
+<td style="text-align: left;">soundData</td>
+<td style="text-align: left;"><a href="#sounddata">SoundData</a></td>
+<td style="text-align: left;">Sound information</td>
+</tr>
+</tbody>
+</table>
+<h4 id="methods-1">Methods</h4>
+<p>Disable processing for each layer</p>
+<pre><code class="lang-csharp">public bool IgnoreAllMethod { get; set; }
+</code></pre>
+<hr>
+<h1 id="soundsourcedata">SoundSourceData</h1>
+<p>3D sound source information structure</p>
+<pre><code class="lang-csharp">namespace GarageKit
+[Serializable]
+public class SoundSourceData
+</code></pre>
+<h4 id="properties-4">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">sourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">3D sound source name</td>
+</tr>
+<tr>
+<td style="text-align: left;">source</td>
+<td style="text-align: left;">AudioSource</td>
+<td style="text-align: left;">AudioSource reference</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="sound3ddata">Sound3DData</h1>
+<p>3D sound information structure</p>
+<pre><code class="lang-csharp">namespace GarageKit
+[Serializable]
+public class Sound3DData
+</code></pre>
+<h4 id="properties-5">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">use</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Use it or not</td>
+</tr>
+<tr>
+<td style="text-align: left;">volume</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">SOund volume</td>
+</tr>
+<tr>
+<td style="text-align: left;">sources</td>
+<td style="text-align: left;">List&lt;<a href="#soundsourcedata">SoundSourceData</a>&gt;</td>
+<td style="text-align: left;">3D sound source information list</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="sound3dlayerdata">Sound3DLayerData</h1>
+<p>3D layer information structure</p>
+<pre><code class="lang-csharp">namespace GarageKit
+[Serializable]
+public class Sound3DLayerData
+</code></pre>
+<h4 id="properties-6">Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">member</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">layerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Layer name</td>
+</tr>
+<tr>
+<td style="text-align: left;">soundData</td>
+<td style="text-align: left;"><a href="#sound3ddata">Sound3DData</a></td>
+<td style="text-align: left;">Sound information</td>
+</tr>
+</tbody>
+</table>
+<h4 id="methods-2">Methods</h4>
+<p>Disable processing for each layer</p>
+<pre><code class="lang-csharp">public bool IgnoreAllMethod { get; set; }
+</code></pre>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
