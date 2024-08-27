@@ -1,0 +1,26 @@
+{
+    "build": {
+        "globalMetadata": {
+            "_appTitle": "Project Starter Package Doc",
+            "_enableSearch": true
+        },
+        "content": [
+            {
+                "files": [
+                    "**/*.{md,yml}"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "image/**"
+                ]
+            }
+        ],
+        "template": [
+            "default"
+        ],
+        "output": "docs"
+    }
+}
