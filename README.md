@@ -1,14 +1,12 @@
 Build using docfx
 ===
 
-Install docfx as a global tool:
+## Install docfx as a global tool
 
 `$ dotnet tool install -g docfx`
 
-@web:
+## Build to `/docs`
 
-`$ docfx build docfx.json`
+@web: `$ docfx build docfx.json`
 
-@local:
-
-`$ docfx build docfx_local.json`
+@local: `$ docfx build docfx_local.json`
