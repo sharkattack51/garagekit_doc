@@ -266,6 +266,8 @@
               href: Utils/UI/UILongPressButton.md
             - name: UIMovieControllPanel.cs
               href: Utils/UI/UIMovieControllPanel.md
+            - name: UIScrollViewPullToRefresh.cs
+              href: Utils/UI/UIScrollViewPullToRefresh.md
             - name: UIWebCamRawImage.cs
               href: Utils/UI/UIWebCamRawImage.md
         - name: VR

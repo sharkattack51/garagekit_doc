@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/Users/kasai/Documents/Doc/garagekit_doc/docfx",
+  "source_base_path": "/Users/kasai/Documents/Doc/garagekit_doc",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,6 +9,16 @@
           "relative_path": "index.json"
         }
       }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
     },
     {
       "type": "Conceptual",
@@ -1186,6 +1196,16 @@
       "output": {
         ".html": {
           "relative_path": "Scripts_en/Utils/UI/UIMovieControllPanel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/UI/UIScrollViewPullToRefresh.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/UI/UIScrollViewPullToRefresh.html"
         }
       },
       "version": ""
@@ -2415,6 +2435,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/UI/UIScrollViewPullToRefresh.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/UI/UIScrollViewPullToRefresh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Scripts_ja/Utils/UI/UIWebCamRawImage.md",
       "output": {
         ".html": {
@@ -3252,6 +3282,16 @@
       "output": {
         "resource": {
           "relative_path": "image/script_reference/uimoviecontrollpanel_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "image/script_reference/uiscrollviewpulltorefresh_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "image/script_reference/uiscrollviewpulltorefresh_inspector.png"
         }
       },
       "version": ""

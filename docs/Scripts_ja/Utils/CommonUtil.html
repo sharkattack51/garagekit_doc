@@ -87,6 +87,12 @@ public class CommonUtil
 <p>ファイルブラウザで指定フォルダを開く</p>
 <pre><code class="lang-csharp">public static void OpenFolder(string path)
 </code></pre>
+<p>対象ディレクトリのコピー</p>
+<pre><code class="lang-csharp">public static void CopyDirectory(string src, string dest, bool overwriteAsLatest = true)
+</code></pre>
+<p>非同期で対象ディレクトリのコピー</p>
+<pre><code class="lang-csharp">public static async UniTask CopyDirectoryAsync(string src, string dest, bool overwriteAsLatest = true, CancellationToken ct = default)
+</code></pre>
 
 </article>
           </div>
@@ -95,6 +101,9 @@ public class CommonUtil
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/sharkattack51/garagekit_doc/blob/main/Scripts_ja/Utils/CommonUtil.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

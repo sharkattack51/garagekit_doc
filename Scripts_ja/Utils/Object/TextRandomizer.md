@@ -26,5 +26,5 @@ public class TextRandomizer : MonoBehaviour
 
 テキストのランダムアニメーションを開始
 ```csharp
-public void TextRandomizeIn(string goalText, float delay = 0.0f, int insertRndChrs = 10, bool defaultSalt = true)
+public void TextRandomizeIn(string goalText, float delay = 0.0f, int insertRndChrs = 10, bool defaultSalt = true, float tick = 0.03f)
 ```

@@ -1,4 +1,9 @@
 {
+  "README.html": {
+    "href": "README.html",
+    "title": "Build using docfx | Project Starter Package Doc",
+    "keywords": "Build using docfx Install docfx as a global tool $ dotnet tool install -g docfx Build to /docs @web: $ docfx build docfx.json @local: $ docfx build docfx_local.json"
+  },
   "Scripts_en/AppMain.html": {
     "href": "Scripts_en/AppMain.html",
     "title": "AppMain | Project Starter Package Doc",
@@ -192,7 +197,7 @@
   "Scripts_en/Utils/CommonUtil.html": {
     "href": "Scripts_en/Utils/CommonUtil.html",
     "title": "CommonUtil | Project Starter Package Doc",
-    "keywords": "CommonUtil Provides utility functions. namespace GarageKit public class CommonUtil Static Methods Open the specified folder in the file browser public static void OpenFolder(string path)"
+    "keywords": "CommonUtil Provides utility functions. namespace GarageKit public class CommonUtil Static Methods Open the specified folder in the file browser public static void OpenFolder(string path) Copy target directory public static void CopyDirectory(string src, string dest, bool overwriteAsLatest = true) Copy target directory asynchronously public static async UniTask CopyDirectoryAsync(string src, string dest, bool overwriteAsLatest = true, CancellationToken ct = default)"
   },
   "Scripts_en/Utils/DataLoader/ContentsDownLoader.html": {
     "href": "Scripts_en/Utils/DataLoader/ContentsDownLoader.html",
@@ -437,7 +442,7 @@
   "Scripts_en/Utils/Object/TextRandomizer.html": {
     "href": "Scripts_en/Utils/Object/TextRandomizer.html",
     "title": "TextRandomizer | Project Starter Package Doc",
-    "keywords": "TextRandomizer Runs an animation that randomly changes text. namespace GarageKit public class TextRandomizer : MonoBehaviour Inheritance TextRandomizer -> MonoBehaviour Inspector Properties member type description randomChars string Characters used for random text uiText TMP_Text TMP_Text reference Methods Start random text animation public void TextRandomizeIn(string goalText, float delay = 0.0f, int insertRndChrs = 10, bool defaultSalt = true)"
+    "keywords": "TextRandomizer Runs an animation that randomly changes text. namespace GarageKit public class TextRandomizer : MonoBehaviour Inheritance TextRandomizer -> MonoBehaviour Inspector Properties member type description randomChars string Characters used for random text uiText TMP_Text TMP_Text reference Methods Start random text animation public void TextRandomizeIn(string goalText, float delay = 0.0f, int insertRndChrs = 10, bool defaultSalt = true, float tick = 0.03f)"
   },
   "Scripts_en/Utils/Object/TransformFollower.html": {
     "href": "Scripts_en/Utils/Object/TransformFollower.html",
@@ -588,6 +593,11 @@
     "href": "Scripts_en/Utils/UI/UIMovieControllPanel.html",
     "title": "UIMovieControllPanel | Project Starter Package Doc",
     "keywords": "UIMovieControllPanel Provides control panel functionality for movie playback using AVProVideo. Important Requires the AVProVideo package. When using it, please enable #define definition in the source code. Important Available from configured prefabs within the package. Add DisplayUGUI and TMP_Text components in the prefab and reset each reference to use them. namespace GarageKit public class UIMovieControllPanel : MonoBehaviour Inheritance ARTrackedImageMarkerManager -> MonoBehaviour Inspector Properties member type description player MediaPlayer MediaPlayer reference setupOnStart bool Set up with Start() uiMovie DisplayUGUI DisplayUGUI reference uiPlayPauseBtn Button Play/Pause button reference uiSeekSlider Slider Seek slider reference uiElapsedTxt TMP_Text Remaining time TMP_Text reference seekEventTrg EventTrigger EventTrigger reference for seek event playSprite Sprite Play button Sprite pauseSprite Sprite Pause button Sprite Methods Callback when playback start public Action OnPlay Callback when paused public Action OnPause Callback when seek start public Action<float> OnSeekStart Callback when seeking public Action<float> OnSeek Callback when seek end public Action<float> OnSeekEnd Callback when playback complete public Action OnFinishedPlaying Clear movie public void Clear() Setup this controll panel public void Setup() Load movie public bool Load(string moviePathOrUrl, MediaPathType pathType = MediaPathType.AbsolutePathOrURL, bool autoPlay = false) Example __ProjectName__/Prefabs/Utils/UI/MovieControllPanel.prefab // Setup required before loading and playing uiMovieControllPanel.Setup(); uiMovieControllPanel.Load(\"test.mp4\");"
+  },
+  "Scripts_en/Utils/UI/UIScrollViewPullToRefresh.html": {
+    "href": "Scripts_en/Utils/UI/UIScrollViewPullToRefresh.html",
+    "title": "UIScrollViewPullToRefresh | Project Starter Package Doc",
+    "keywords": "UIScrollViewPullToRefresh Component for the function that pulls the scroll view down and refresh the content. namespace GarageKit public class UIScrollViewPullToRefresh : MonoBehaviour Inheritance UIScrollViewPullToRefresh -> MonoBehaviour Inspector Properties member type description uiScrlRect ScrollRect ScrollRect reference indicatorImg Image Indicator image reference Methods Callback to start pull down operation public Action OnPullStart Callback for canceling pull down operation public Action OnPullCancel Callback when the scroll threshold is exceeded by pulling down public Action OnPullOverTh Callback when refreshing after finishing the pull down operation public Action OnPullToRefresh"
   },
   "Scripts_en/Utils/UI/UIWebCamRawImage.html": {
     "href": "Scripts_en/Utils/UI/UIWebCamRawImage.html",
@@ -797,7 +807,7 @@
   "Scripts_ja/Utils/CommonUtil.html": {
     "href": "Scripts_ja/Utils/CommonUtil.html",
     "title": "CommonUtil | Project Starter Package Doc",
-    "keywords": "CommonUtil ユーティリティ関数を提供します。 namespace GarageKit public class CommonUtil Static Methods ファイルブラウザで指定フォルダを開く public static void OpenFolder(string path)"
+    "keywords": "CommonUtil ユーティリティ関数を提供します。 namespace GarageKit public class CommonUtil Static Methods ファイルブラウザで指定フォルダを開く public static void OpenFolder(string path) 対象ディレクトリのコピー public static void CopyDirectory(string src, string dest, bool overwriteAsLatest = true) 非同期で対象ディレクトリのコピー public static async UniTask CopyDirectoryAsync(string src, string dest, bool overwriteAsLatest = true, CancellationToken ct = default)"
   },
   "Scripts_ja/Utils/DataLoader/ContentsDownLoader.html": {
     "href": "Scripts_ja/Utils/DataLoader/ContentsDownLoader.html",
@@ -1042,7 +1052,7 @@
   "Scripts_ja/Utils/Object/TextRandomizer.html": {
     "href": "Scripts_ja/Utils/Object/TextRandomizer.html",
     "title": "TextRandomizer | Project Starter Package Doc",
-    "keywords": "TextRandomizer テキストをランダムに変更するアニメーションを実行します。 namespace GarageKit public class TextRandomizer : MonoBehaviour Inheritance TextRandomizer -> MonoBehaviour Inspector Properties member type description randomChars string ランダムテキストに利用するキャラクター uiText TMP_Text TMP_Text の参照 Methods テキストのランダムアニメーションを開始 public void TextRandomizeIn(string goalText, float delay = 0.0f, int insertRndChrs = 10, bool defaultSalt = true)"
+    "keywords": "TextRandomizer テキストをランダムに変更するアニメーションを実行します。 namespace GarageKit public class TextRandomizer : MonoBehaviour Inheritance TextRandomizer -> MonoBehaviour Inspector Properties member type description randomChars string ランダムテキストに利用するキャラクター uiText TMP_Text TMP_Text の参照 Methods テキストのランダムアニメーションを開始 public void TextRandomizeIn(string goalText, float delay = 0.0f, int insertRndChrs = 10, bool defaultSalt = true, float tick = 0.03f)"
   },
   "Scripts_ja/Utils/Object/TransformFollower.html": {
     "href": "Scripts_ja/Utils/Object/TransformFollower.html",
@@ -1193,6 +1203,11 @@
     "href": "Scripts_ja/Utils/UI/UIMovieControllPanel.html",
     "title": "UIMovieControllPanel | Project Starter Package Doc",
     "keywords": "UIMovieControllPanel AVProVideo を利用してムービー再生用のコントロールパネル機能を提供します。 Important AVProVideo パッケージが必要です。利用の際はソースコード内の #define 定義を有効にしてください。 Important パッケージ内の設定済みプレハブから利用できます。プレハブ内に DisplayUGUI と TMP_Text のコンポーネントを追加し、各参照を再設定して利用してください。 namespace GarageKit public class UIMovieControllPanel : MonoBehaviour Inheritance ARTrackedImageMarkerManager -> MonoBehaviour Inspector Properties member type description player MediaPlayer MediaPlayer の参照 setupOnStart bool Start() でセットアップを行う uiMovie DisplayUGUI 表示用 DisplayUGUI の参照 uiPlayPauseBtn Button 再生 / 一時停止ボタンの参照 uiSeekSlider Slider シーク用 Slider の参照 uiElapsedTxt TMP_Text 残り時間表示 TMP_Text の参照 seekEventTrg EventTrigger シークイベント用 EventTrigger の参照 playSprite Sprite 再生ボタン Sprite pauseSprite Sprite 一時停止ボタン Sprite Methods 再生開始時コールバック public Action OnPlay 再生一時停止時コールバック public Action OnPause シーク開始時コールバック public Action<float> OnSeekStart シーク中コールバック public Action<float> OnSeek シーク終了時コールバック public Action<float> OnSeekEnd 再生完了時コールバック public Action OnFinishedPlaying 映像のクリア public void Clear() 映像のセットアップ public void Setup() 映像の読み込み public bool Load(string moviePathOrUrl, MediaPathType pathType = MediaPathType.AbsolutePathOrURL, bool autoPlay = false) Example __ProjectName__/Prefabs/Utils/UI/MovieControllPanel.prefab // 読み込み再生前にセットアップが必要 uiMovieControllPanel.Setup(); uiMovieControllPanel.Load(\"test.mp4\");"
+  },
+  "Scripts_ja/Utils/UI/UIScrollViewPullToRefresh.html": {
+    "href": "Scripts_ja/Utils/UI/UIScrollViewPullToRefresh.html",
+    "title": "UIScrollViewPullToRefresh | Project Starter Package Doc",
+    "keywords": "UIScrollViewPullToRefresh スクロールビューを下に引いて内容を更新する機能のコンポーネント namespace GarageKit public class UIScrollViewPullToRefresh : MonoBehaviour Inheritance UIScrollViewPullToRefresh -> MonoBehaviour Inspector Properties member type description uiScrlRect ScrollRect 操作対象のScrollRectの参照 indicatorImg Image インジケータイメージの参照 Methods 下に引く操作開始のコールバック public Action OnPullStart 下に引く操作キャンセルのコールバック public Action OnPullCancel 下に引く操作でスクロール閾値を越えた時のコールバック public Action OnPullOverTh 下に引く操作を終了してリフレッシュ処理時のコールバック public Action OnPullToRefresh"
   },
   "Scripts_ja/Utils/UI/UIWebCamRawImage.html": {
     "href": "Scripts_ja/Utils/UI/UIWebCamRawImage.html",
