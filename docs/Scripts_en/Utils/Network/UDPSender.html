@@ -111,22 +111,30 @@ public class UDPSender : MonoBehaviour
 </table>
 <h4 id="methods">Methods</h4>
 <p>Send string</p>
-<pre><code class="lang-csharp">public void Send(string dataStr, string address = null, int? port = null)
+<pre><code class="lang-csharp">public void Send(string dataStr, string address = null, int? port = null, CancellationToken ct = default(CancellationToken))
 </code></pre>
 <p>Send byte data</p>
-<pre><code class="lang-csharp">public void Send(byte[] data, string address = null, int? port = null)
+<pre><code class="lang-csharp">public void Send(byte[] data, string address = null, int? port = null, CancellationToken ct = default(CancellationToken))
 </code></pre>
 <p>Send string multiple times</p>
-<pre><code class="lang-csharp">public void TryContinuousSend(string dataStr, int tryCount, float span = 0.1f, string address = null, int? port = null)
+<pre><code class="lang-csharp">public void TryContinuousSend(string dataStr, int tryCount, float span = 0.1f, string address = null, int? port = null, CancellationToken ct = default(CancellationToken))
+</code></pre>
+<p>Send string to address range</p>
+<pre><code class="lang-csharp">public void RangeSend(string dataStr, List&lt;string&gt; addresses, int? port = null, CancellationToken ct = default(CancellationToken))
+public void RangeSend(string dataStr, string startAddress, int addressNum, int? port = null, CancellationToken ct = default(CancellationToken))
+</code></pre>
+<p>Send string to address range multiple times</p>
+<pre><code class="lang-csharp">public void TryContinuousRangeSend(string dataStr, List&lt;string&gt; addresses, int tryCount, float span = 0.1f, int? port = null, CancellationToken ct = default(CancellationToken))
+public void TryContinuousRangeSend(string dataStr, string startAddress, int addressNum, int tryCount, float span = 0.1f, int? port = null, CancellationToken ct = default(CancellationToken))
 </code></pre>
 <p>Broadcast string</p>
-<pre><code class="lang-csharp">public void Broadcast(string dataStr, int? port = null)
+<pre><code class="lang-csharp">public void Broadcast(string dataStr, int? port = null, CancellationToken ct = default(CancellationToken))
 </code></pre>
 <p>Broadcast byte data</p>
-<pre><code class="lang-csharp">public void Broadcast(byte[] data, int? port = null)
+<pre><code class="lang-csharp">public void Broadcast(byte[] data, int? port = null, CancellationToken ct = default(CancellationToken))
 </code></pre>
 <p>Broadcast string multiple times</p>
-<pre><code class="lang-csharp">public void TryContinuousBroadcast(string dataStr, int tryCount, float span = 0.1f, int? port = null)
+<pre><code class="lang-csharp">public void TryContinuousBroadcast(string dataStr, int tryCount, float span = 0.1f, int? port = null, CancellationToken ct = default(CancellationToken))
 </code></pre>
 
 </article>

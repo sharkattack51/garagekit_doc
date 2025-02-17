@@ -26,30 +26,42 @@ public class UDPSender : MonoBehaviour
 
 文字列の送信
 ```csharp
-public void Send(string dataStr, string address = null, int? port = null)
+public void Send(string dataStr, string address = null, int? port = null, CancellationToken ct = default(CancellationToken))
 ```
 
 バイトデータの送信
 ```csharp
-public void Send(byte[] data, string address = null, int? port = null)
+public void Send(byte[] data, string address = null, int? port = null, CancellationToken ct = default(CancellationToken))
 ```
 
 文字列の複数回送信
 ```csharp
-public void TryContinuousSend(string dataStr, int tryCount, float span = 0.1f, string address = null, int? port = null)
+public void TryContinuousSend(string dataStr, int tryCount, float span = 0.1f, string address = null, int? port = null, CancellationToken ct = default(CancellationToken))
+```
+
+指定アドレス範囲への文字列の送信
+```csharp
+public void RangeSend(string dataStr, List<string> addresses, int? port = null, CancellationToken ct = default(CancellationToken))
+public void RangeSend(string dataStr, string startAddress, int addressNum, int? port = null, CancellationToken ct = default(CancellationToken))
+```
+
+指定アドレス範囲への文字列の複数回送信
+```csharp
+public void TryContinuousRangeSend(string dataStr, List<string> addresses, int tryCount, float span = 0.1f, int? port = null, CancellationToken ct = default(CancellationToken))
+public void TryContinuousRangeSend(string dataStr, string startAddress, int addressNum, int tryCount, float span = 0.1f, int? port = null, CancellationToken ct = default(CancellationToken))
 ```
 
 文字列のブロードキャスト送信
 ```csharp
-public void Broadcast(string dataStr, int? port = null)
+public void Broadcast(string dataStr, int? port = null, CancellationToken ct = default(CancellationToken))
 ```
 
 バイトデータのブロードキャスト送信
 ```csharp
-public void Broadcast(byte[] data, int? port = null)
+public void Broadcast(byte[] data, int? port = null, CancellationToken ct = default(CancellationToken))
 ```
 
 文字列の複数回ブロードキャスト送信
 ```csharp
-public void TryContinuousBroadcast(string dataStr, int tryCount, float span = 0.1f, int? port = null)
+public void TryContinuousBroadcast(string dataStr, int tryCount, float span = 0.1f, int? port = null, CancellationToken ct = default(CancellationToken))
 ```
