@@ -47,7 +47,7 @@ public class UIWebCamRawImage : MonoBehaviour
 
 |enums|description|
 |:--|:--|
-|NONE|無し|
+|NONE|none|
 |FIT_WIDTH|Fit width|
 |FIT_HEIGHT|Fit height|
 
