@@ -13,7 +13,7 @@ GarageKit for Unity Doc
 
 |unity|package|
 |:--|:--|
-|2021+|`GarageKit_for_unity2021.unitypackage`|
+|6000+|`GarageKit_for_unity6.unitypackage`|
 
 ### Beginners Tutorial
 
@@ -35,7 +35,7 @@ For information on using scripts in packages, see the [__Scripts Reference__](~/
 
 |unity|package|
 |:--|:--|
-|2021+|`GarageKit_for_unity2021.unitypackage`|
+|6000+|`GarageKit_for_unity6.unitypackage`|
 
 ### 初学者向けチュートリアル
 
