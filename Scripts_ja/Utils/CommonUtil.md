@@ -9,6 +9,11 @@ public class CommonUtil
 
 #### Static Methods
 
+実行プラットフォームごとの外部リソースディレクトリを作成、取得する(WinMac:実行ファイルと同階層,　iOS:Application.persistentDataPath以下, Android:デバイスルート)
+```csharp
+public static string GetPlatformResourceRootDirectory(string appRootDir = "")
+```
+
 ファイルブラウザで指定フォルダを開く
 ```csharp
 public static void OpenFolder(string path)

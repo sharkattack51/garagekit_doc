@@ -31,10 +31,14 @@ public class SceneStateManager : ManagerBase
 public SceneStateData CurrentState { get; }
 ```
 
-一つ前のステート名
+遷移前のステート名
 ```csharp
 public string FromStateName { get; }
 ```
+
+遷移先のステート名
+```csharp
+public string ToStateName { get; }
 
 ステート遷移処理中フラグ
 ```csharp

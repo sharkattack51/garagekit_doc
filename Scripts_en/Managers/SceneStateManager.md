@@ -36,6 +36,11 @@ Previous state name
 public string FromStateName { get; }
 ```
 
+Destination state name
+```csharp
+public string ToStateName { get; }
+```
+
 State transition processing flag
 ```csharp
 public bool StateChanging { get; }

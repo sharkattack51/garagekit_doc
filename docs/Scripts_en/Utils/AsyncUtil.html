@@ -90,6 +90,15 @@ public class AsyncUtil
 <p>Texture2D multiple simultaneous asynchronous loading</p>
 <pre><code class="lang-csharp">public static async UniTask&lt;Texture2D[]&gt; LoadTextureAllAsync(string[] paths, CancellationToken ct = default)
 </code></pre>
+<p>Asynchronous downlod</p>
+<pre><code class="lang-csharp">public static async UniTask&lt;string&gt; DownloadAsync(string url, CancellationToken ct = default)
+</code></pre>
+<p>Save file after asynchronous download</p>
+<pre><code class="lang-csharp">public static async UniTask DownloadFileAsync(string url, string dstFile, CancellationToken ct = default)
+</code></pre>
+<p>Save files after asynchronous download of multiple targets</p>
+<pre><code class="lang-csharp">public static async UniTask DownloadFileAllAsync(string[] urls, string[] dstFiles, CancellationToken ct = default)
+</code></pre>
 
 </article>
           </div>

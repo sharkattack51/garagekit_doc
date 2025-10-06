@@ -177,8 +177,8 @@ public class UIMovieControllPanel : MonoBehaviour
 <p>映像のセットアップ</p>
 <pre><code class="lang-csharp">public void Setup()
 </code></pre>
-<p>映像の読み込み</p>
-<pre><code class="lang-csharp">public bool Load(string moviePathOrUrl, MediaPathType pathType = MediaPathType.AbsolutePathOrURL, bool autoPlay = false)
+<p>映像の非同期読み込み</p>
+<pre><code class="lang-csharp">public async UniTask&lt;bool&gt; LoadAsync(string moviePathOrUrl, MediaPathType pathType = MediaPathType.AbsolutePathOrURL, bool autoPlay = false)
 </code></pre>
 <h4 id="example">Example</h4>
 <ul>
@@ -186,7 +186,7 @@ public class UIMovieControllPanel : MonoBehaviour
 </ul>
 <pre><code class="lang-csharp">// 読み込み再生前にセットアップが必要
 uiMovieControllPanel.Setup();
-uiMovieControllPanel.Load(&quot;test.mp4&quot;);
+await uiMovieControllPanel.LoadAsync(&quot;test.mp4&quot;);
 </code></pre>
 
 </article>

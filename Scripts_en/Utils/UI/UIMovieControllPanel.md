@@ -77,9 +77,9 @@ Setup this controll panel
 public void Setup()
 ```
 
-Load movie
+Asynchronous movie loading
 ```csharp
-public bool Load(string moviePathOrUrl, MediaPathType pathType = MediaPathType.AbsolutePathOrURL, bool autoPlay = false)
+public async UniTask<bool> LoadAsync(string moviePathOrUrl, MediaPathType pathType = MediaPathType.AbsolutePathOrURL, bool autoPlay = false)
 ```
 
 #### Example
@@ -89,5 +89,5 @@ public bool Load(string moviePathOrUrl, MediaPathType pathType = MediaPathType.A
 ```csharp
 // Setup required before loading and playing
 uiMovieControllPanel.Setup();
-uiMovieControllPanel.Load("test.mp4");
+await uiMovieControllPanel.LoadAsync("test.mp4");
 ```

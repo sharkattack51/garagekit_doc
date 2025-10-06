@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>CommonUtil | Project Starter Package Doc </title>
+      <title>IOSUtil | Project Starter Package Doc </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="CommonUtil | Project Starter Package Doc ">
+      <meta name="title" content="IOSUtil | Project Starter Package Doc ">
     
     
       <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,24 +77,15 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="commonutil">CommonUtil</h1>
+<h1 id="iosutil">IOSUtil</h1>
 
-<p>ユーティリティ関数を提供します。</p>
+<p>iOS関連のユーティリティ関数を提供します。</p>
 <pre><code class="lang-csharp">namespace GarageKit
-public class CommonUtil
+public class IOSUtil
 </code></pre>
 <h4 id="static-methods">Static Methods</h4>
-<p>実行プラットフォームごとの外部リソースディレクトリを作成、取得する(WinMac:実行ファイルと同階層,　iOS:Application.persistentDataPath以下, Android:デバイスルート)</p>
-<pre><code class="lang-csharp">public static string GetPlatformResourceRootDirectory(string appRootDir = &quot;&quot;)
-</code></pre>
-<p>ファイルブラウザで指定フォルダを開く</p>
-<pre><code class="lang-csharp">public static void OpenFolder(string path)
-</code></pre>
-<p>対象ディレクトリのコピー</p>
-<pre><code class="lang-csharp">public static void CopyDirectory(string src, string dest, bool overwriteAsLatest = true)
-</code></pre>
-<p>非同期で対象ディレクトリのコピー</p>
-<pre><code class="lang-csharp">public static async UniTask CopyDirectoryAsync(string src, string dest, bool overwriteAsLatest = true, CancellationToken ct = default)
+<p>アプリケーションの Documents フォルダ以下を自動バックアップ対象から外す</p>
+<pre><code class="lang-csharp">public static void NoBackupDocumentsFolder()
 </code></pre>
 
 </article>
@@ -105,7 +96,7 @@ public class CommonUtil
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/sharkattack51/garagekit_doc/blob/main/Scripts_ja/Utils/CommonUtil.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/sharkattack51/garagekit_doc/blob/main/Scripts_ja/Utils/IOSUtil.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

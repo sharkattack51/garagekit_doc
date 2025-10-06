@@ -111,11 +111,15 @@ public class SceneStateManager : ManagerBase
 <p>現在のステート情報</p>
 <pre><code class="lang-csharp">public SceneStateData CurrentState { get; }
 </code></pre>
-<p>一つ前のステート名</p>
+<p>遷移前のステート名</p>
 <pre><code class="lang-csharp">public string FromStateName { get; }
 </code></pre>
-<p>ステート遷移処理中フラグ</p>
-<pre><code class="lang-csharp">public bool StateChanging { get; }
+<p>遷移先のステート名</p>
+<pre><code class="lang-csharp">public string ToStateName { get; }
+
+ステート遷移処理中フラグ
+```csharp
+public bool StateChanging { get; }
 </code></pre>
 <p>ステート遷移フェード処理中フラグ</p>
 <pre><code class="lang-csharp">public bool AsyncChangeFading { get; }

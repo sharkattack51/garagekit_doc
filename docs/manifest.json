@@ -32,6 +32,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Editor/BuildProcessor.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Editor/BuildProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Scripts_en/Managers/DebugManager.md",
       "output": {
         ".html": {
@@ -246,6 +256,16 @@
       "output": {
         ".html": {
           "relative_path": "Scripts_en/Utils/AsyncUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/Attribute/EnumLabelAttribute.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/Attribute/EnumLabelAttribute.html"
         }
       },
       "version": ""
@@ -606,6 +626,16 @@
       "output": {
         ".html": {
           "relative_path": "Scripts_en/Utils/Event/TimerEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/IOSUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/IOSUtil.html"
         }
       },
       "version": ""
@@ -1265,6 +1295,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Editor/BuildProcessor.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Editor/BuildProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Scripts_ja/Managers/DebugManager.md",
       "output": {
         ".html": {
@@ -1479,6 +1519,16 @@
       "output": {
         ".html": {
           "relative_path": "Scripts_ja/Utils/AsyncUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/Attribute/EnumLabelAttribute.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/Attribute/EnumLabelAttribute.html"
         }
       },
       "version": ""
@@ -1839,6 +1889,16 @@
       "output": {
         ".html": {
           "relative_path": "Scripts_ja/Utils/Event/TimerEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/IOSUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/IOSUtil.html"
         }
       },
       "version": ""

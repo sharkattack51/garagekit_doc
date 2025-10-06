@@ -90,6 +90,15 @@ public class AsyncUtil
 <p>Texture2D 複数同時の非同期読み込み</p>
 <pre><code class="lang-csharp">public static async UniTask&lt;Texture2D[]&gt; LoadTextureAllAsync(string[] paths, CancellationToken ct = default)
 </code></pre>
+<p>非同期ダウンロード</p>
+<pre><code class="lang-csharp">public static async UniTask&lt;string&gt; DownloadAsync(string url, CancellationToken ct = default)
+</code></pre>
+<p>非同期ダウンロード後にファイル保存</p>
+<pre><code class="lang-csharp">public static async UniTask DownloadFileAsync(string url, string dstFile, CancellationToken ct = default)
+</code></pre>
+<p>複数対象を非同期ダウンロード後にファイル保存</p>
+<pre><code class="lang-csharp">public static async UniTask DownloadFileAllAsync(string[] urls, string[] dstFiles, CancellationToken ct = default)
+</code></pre>
 
 </article>
           </div>

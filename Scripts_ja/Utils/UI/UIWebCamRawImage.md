@@ -29,9 +29,9 @@ public class UIWebCamRawImage : MonoBehaviour
 |anisoLevel|int|映像テクスチャの異方性フィルタリングレベル|
 |filteMode|FilterMode|映像テクスチャのフィルターモード|
 |wrapMode|TextureWrapMode|映像テクスチャの繰り返しモード|
-|isAutoScreenAspect|bool|アスペクトの自動設定|
 |isMirror|bool|左右反転設定|
 |appOrientation|[APP_ORIENTATION](#app_orientation)|画面の向き|
+|aspectFitMode|[ASPECT_FIT_MODE](#aspect_fit_mode)|アスペクト比設定|
 
 #### Enums
 
@@ -41,6 +41,15 @@ public class UIWebCamRawImage : MonoBehaviour
 |:--|:--|
 |PORTRAIT|ポートレイト / 端末縦位置|
 |LANDSCAPE|ランドスケープ / 端末横位置|
+|LANDSCAPE_LEFT|ランドスケープ / 端末横位置(ホームボタンが左手)|
+
+##### __ASPECT_FIT_MODE__
+
+|enums|description|
+|:--|:--|
+|NONE|無し|
+|FIT_WIDTH|幅をフィット|
+|FIT_HEIGHT|高さをフィット|
 
 #### Methods
 

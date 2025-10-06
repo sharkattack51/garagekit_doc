@@ -144,11 +144,6 @@ public class UIWebCamRawImage : MonoBehaviour
 <td style="text-align: left;">映像テクスチャの繰り返しモード</td>
 </tr>
 <tr>
-<td style="text-align: left;">isAutoScreenAspect</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">アスペクトの自動設定</td>
-</tr>
-<tr>
 <td style="text-align: left;">isMirror</td>
 <td style="text-align: left;">bool</td>
 <td style="text-align: left;">左右反転設定</td>
@@ -157,6 +152,11 @@ public class UIWebCamRawImage : MonoBehaviour
 <td style="text-align: left;">appOrientation</td>
 <td style="text-align: left;"><a href="#app_orientation">APP_ORIENTATION</a></td>
 <td style="text-align: left;">画面の向き</td>
+</tr>
+<tr>
+<td style="text-align: left;">aspectFitMode</td>
+<td style="text-align: left;"><a href="#aspect_fit_mode">ASPECT_FIT_MODE</a></td>
+<td style="text-align: left;">アスペクト比設定</td>
 </tr>
 </tbody>
 </table>
@@ -177,6 +177,33 @@ public class UIWebCamRawImage : MonoBehaviour
 <tr>
 <td style="text-align: left;">LANDSCAPE</td>
 <td style="text-align: left;">ランドスケープ / 端末横位置</td>
+</tr>
+<tr>
+<td style="text-align: left;">LANDSCAPE_LEFT</td>
+<td style="text-align: left;">ランドスケープ / 端末横位置(ホームボタンが左手)</td>
+</tr>
+</tbody>
+</table>
+<h5 id="aspect_fit_mode"><strong>ASPECT_FIT_MODE</strong></h5>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">enums</th>
+<th style="text-align: left;">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">NONE</td>
+<td style="text-align: left;">無し</td>
+</tr>
+<tr>
+<td style="text-align: left;">FIT_WIDTH</td>
+<td style="text-align: left;">幅をフィット</td>
+</tr>
+<tr>
+<td style="text-align: left;">FIT_HEIGHT</td>
+<td style="text-align: left;">高さをフィット</td>
 </tr>
 </tbody>
 </table>

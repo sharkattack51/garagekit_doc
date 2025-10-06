@@ -84,6 +84,9 @@
 public class CommonUtil
 </code></pre>
 <h4 id="static-methods">Static Methods</h4>
+<p>Create and retrieve external resource directories for each execution platform (WinMac: same hierarchy as the executable, iOS: Application.persistentDataPath, Android: device root)</p>
+<pre><code class="lang-csharp">public static string GetPlatformResourceRootDirectory(string appRootDir = &quot;&quot;)
+</code></pre>
 <p>Open the specified folder in the file browser</p>
 <pre><code class="lang-csharp">public static void OpenFolder(string path)
 </code></pre>

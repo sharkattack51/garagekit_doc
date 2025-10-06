@@ -77,9 +77,9 @@ public void Clear()
 public void Setup()
 ```
 
-映像の読み込み
+映像の非同期読み込み
 ```csharp
-public bool Load(string moviePathOrUrl, MediaPathType pathType = MediaPathType.AbsolutePathOrURL, bool autoPlay = false)
+public async UniTask<bool> LoadAsync(string moviePathOrUrl, MediaPathType pathType = MediaPathType.AbsolutePathOrURL, bool autoPlay = false)
 ```
 
 #### Example
@@ -89,5 +89,5 @@ public bool Load(string moviePathOrUrl, MediaPathType pathType = MediaPathType.A
 ```csharp
 // 読み込み再生前にセットアップが必要
 uiMovieControllPanel.Setup();
-uiMovieControllPanel.Load("test.mp4");
+await uiMovieControllPanel.LoadAsync("test.mp4");
 ```
