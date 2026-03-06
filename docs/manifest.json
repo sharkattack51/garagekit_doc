@@ -1252,6 +1252,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Scripts_en/Utils/UIUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_en/Utils/UIUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Scripts_en/Utils/VR/VRGazeGuideArrow.md",
       "output": {
         ".html": {
@@ -2509,6 +2519,16 @@
       "output": {
         ".html": {
           "relative_path": "Scripts_ja/Utils/UI/UIWebCamRawImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Scripts_ja/Utils/UIUtil.md",
+      "output": {
+        ".html": {
+          "relative_path": "Scripts_ja/Utils/UIUtil.html"
         }
       },
       "version": ""

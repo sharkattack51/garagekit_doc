@@ -308,6 +308,8 @@
           href: Utils/TextUtil.md
         - name: TimelineUtil.cs
           href: Utils/TimelineUtil.md
+        - name: UIUtil.cs
+          href: Utils/UIUtil.md
         - name: WindowsUtil.cs
           href: Utils/WindowsUtil.md
     - name: AppMain.cs

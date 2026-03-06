@@ -12,5 +12,6 @@ public class CaptureUtil
 Specify the range and save the screen capture
 ```csharp
 public static IEnumerator CaptureRect(string fileName, bool withTimestamp)
+public static IEnumerator CaptureRect(string dirPath, string fileName, bool withTimestamp)
 public static IEnumerator CaptureRect(string dirPath, string fileName, Rect range, bool withTimestamp)
 ```

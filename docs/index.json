@@ -77,7 +77,7 @@
   "Scripts_en/Utils/AndroidUtil.html": {
     "href": "Scripts_en/Utils/AndroidUtil.html",
     "title": "AndroidUtil | Project Starter Package Doc",
-    "keywords": "AndroidUtil Provides utility functions for Android. namespace GarageKit public class AndroidUtil Static Methods Get path to internal data area public static string FileDir() Get path to internal cache area public static string CacheDir() Get path to external data area public static string ExternalFilesDir() Get path to external cache area public static string ExternalCacheDir() Get path to external strage public static string ExternalStorageDir() Get path to public area in external strage public static string ExternalStoragePublicDir() Get path to download directory public static string DownloadDir() Open specified activity public static void OpenActivity(string packageName, string className, bool asNewTask) Sending broadcast messages to the system public static void SendBroadcast(string action) Get API level public static int GetApiLevel() Requesting file access permissions on Android 11 and above public static void RequestAllFilesAccessPermission()"
+    "keywords": "AndroidUtil Provides utility functions for Android. namespace GarageKit public class AndroidUtil Static Methods Get path to internal data area public static string FileDir() Get path to internal cache area public static string CacheDir() Get path to external data area public static string ExternalFilesDir() Get path to external cache area public static string ExternalCacheDir() Get path to external strage public static string ExternalStorageDir() Get path to public area in external strage public static string ExternalStoragePublicDir() Get path to download directory public static string DownloadDir() Open specified activity public static void OpenActivity(string packageName, string className, bool asNewTask) Open Wifi setting activity public static void OpenWifiSettingActivity(bool asNewTask = true) Sending broadcast messages to the system public static void SendBroadcast(string action) Get API level public static int GetApiLevel() Requesting file access permissions on Android 11 and above public static void RequestAllFilesAccessPermission()"
   },
   "Scripts_en/Utils/AnimationCurveUtil.html": {
     "href": "Scripts_en/Utils/AnimationCurveUtil.html",
@@ -122,7 +122,7 @@
   "Scripts_en/Utils/AsyncUtil.html": {
     "href": "Scripts_en/Utils/AsyncUtil.html",
     "title": "AsyncUtil | Project Starter Package Doc",
-    "keywords": "AsyncUtil Provides Async-related utility functions. namespace GarageKit public class AsyncUtil Static Methods Texture2D asynchronous loading public static async UniTask<Texture2D> LoadTextureAsync(string path, CancellationToken ct = default) Texture2D multiple simultaneous asynchronous loading public static async UniTask<Texture2D[]> LoadTextureAllAsync(string[] paths, CancellationToken ct = default) Asynchronous downlod public static async UniTask<string> DownloadAsync(string url, CancellationToken ct = default) Save file after asynchronous download public static async UniTask DownloadFileAsync(string url, string dstFile, CancellationToken ct = default) Save files after asynchronous download of multiple targets public static async UniTask DownloadFileAllAsync(string[] urls, string[] dstFiles, CancellationToken ct = default)"
+    "keywords": "AsyncUtil Provides Async-related utility functions. namespace GarageKit public class AsyncUtil Static Methods Texture2D asynchronous loading public static async UniTask<Texture2D> LoadTextureAsync(string path, CancellationToken ct = default) Texture2D multiple simultaneous asynchronous loading public static async UniTask<Texture2D[]> LoadTextureAllAsync(string[] paths, CancellationToken ct = default) Texture2D asynchronous loading with option public static async UniTask<Texture2D> LoadTextureWithOptionAsync(string path, TextureFormat texFormat, bool mipChain, TextureWrapMode wrapModeU, TextureWrapMode wrapModeV, FilterMode filterMode, CancellationToken ct = default) Asynchronous downlod public static async UniTask<string> DownloadAsync(string url, CancellationToken ct = default) Save file after asynchronous download public static async UniTask DownloadFileAsync(string url, string dstFile, CancellationToken ct = default) Save files after asynchronous download of multiple targets public static async UniTask DownloadFileAllAsync(string[] urls, string[] dstFiles, CancellationToken ct = default)"
   },
   "Scripts_en/Utils/Attribute/EnumLabelAttribute.html": {
     "href": "Scripts_en/Utils/Attribute/EnumLabelAttribute.html",
@@ -202,7 +202,7 @@
   "Scripts_en/Utils/CaptureUtil.html": {
     "href": "Scripts_en/Utils/CaptureUtil.html",
     "title": "CaptureUtil | Project Starter Package Doc",
-    "keywords": "CaptureUtil Provides capture related utility functions. namespace GarageKit public class CaptureUtil Static Methods Specify the range and save the screen capture public static IEnumerator CaptureRect(string fileName, bool withTimestamp) public static IEnumerator CaptureRect(string dirPath, string fileName, Rect range, bool withTimestamp)"
+    "keywords": "CaptureUtil Provides capture related utility functions. namespace GarageKit public class CaptureUtil Static Methods Specify the range and save the screen capture public static IEnumerator CaptureRect(string fileName, bool withTimestamp) public static IEnumerator CaptureRect(string dirPath, string fileName, bool withTimestamp) public static IEnumerator CaptureRect(string dirPath, string fileName, Rect range, bool withTimestamp)"
   },
   "Scripts_en/Utils/CommonUtil.html": {
     "href": "Scripts_en/Utils/CommonUtil.html",
@@ -477,7 +477,7 @@
   "Scripts_en/Utils/ObjectUtil.html": {
     "href": "Scripts_en/Utils/ObjectUtil.html",
     "title": "ObjectUtil | Project Starter Package Doc",
-    "keywords": "ObjectUtil Provides utility functions related to object manipulation. namespace GarageKit public class ObjectUtil Static Methods Setting layers of child hierarchy objects all at once public static void SetLayerChildren(GameObject rootObject, int layer, bool changeParent = false) Get the bounding box of the entire hierarchy public static Bounds GetRenderBoundsChildren(GameObject root)"
+    "keywords": "ObjectUtil Provides utility functions related to object manipulation. namespace GarageKit public class ObjectUtil Static Methods Setting layers of child hierarchy objects all at once public static void SetLayerChildren(GameObject rootObject, int layer, bool changeParent = false) Get the bounding box of the entire hierarchy public static Bounds CalcLocalObjBounds(GameObject obj) public static Bounds CalcChildObjWorldBounds(GameObject obj, Bounds bounds)"
   },
   "Scripts_en/Utils/Render/GlLineRenderer.html": {
     "href": "Scripts_en/Utils/Render/GlLineRenderer.html",
@@ -619,6 +619,11 @@
     "title": "UIWebCamRawImage | Project Starter Package Doc",
     "keywords": "UIWebCamRawImage Simplifies uGUI RawImage settings that use a web camera. namespace GarageKit [RequireComponent(typeof(RawImage))] public class UIWebCamRawImage : MonoBehaviour Inheritance UIWebCamRawImage -> MonoBehaviour Inspector Properties member type description webcamPlayOnStart bool Start playback with Start() deviceName string Specifying camera device name deviceIndex int Specifying camera device id requestedWidth int Camera image width specification requestedHeight int Camera image height specification requestedFPS int Camera image FPS specification anisoLevel int Anisotropic filtering level of texture filteMode FilterMode Filter mode of texture wrapMode TextureWrapMode Wrap mode of texture isMirror bool Horizontal flip setting appOrientation APP_ORIENTATION Screen orientation aspectFitMode ASPECT_FIT_MODE Aspect ratio settings Enums APP_ORIENTATION enums description PORTRAIT Device vertical position LANDSCAPE Device horizontal position LANDSCAPE_LEFT Device horizontal position(home button on the left) ASPECT_FIT_MODE enums description NONE none FIT_WIDTH Fit width FIT_HEIGHT Fit height Methods Get WebCamTexture public WebCamTexture WebCamTexture { get; } Start webcam public IEnumerator WebcamPlay() Stop webcam public void WebcamStop() Check if the webcam is open public bool IsWebcamPlay()"
   },
+  "Scripts_en/Utils/UIUtil.html": {
+    "href": "Scripts_en/Utils/UIUtil.html",
+    "title": "UIUtil | Project Starter Package Doc",
+    "keywords": "UIUtil Provides UI utility functions. namespace GarageKit public class UIUtil Static Methods Count the current number of columns and rows in a grid layout public static Vector2 CalcGridLayoutColumnsAndRowsCount(GridLayoutGroup grid, int cells)"
+  },
   "Scripts_en/Utils/VR/VRGazeGuideArrow.html": {
     "href": "Scripts_en/Utils/VR/VRGazeGuideArrow.html",
     "title": "VRGazeGuideArrow | Project Starter Package Doc",
@@ -702,7 +707,7 @@
   "Scripts_ja/Utils/AndroidUtil.html": {
     "href": "Scripts_ja/Utils/AndroidUtil.html",
     "title": "AndroidUtil | Project Starter Package Doc",
-    "keywords": "AndroidUtil Android 用のユーティリティ関数を提供します。 namespace GarageKit public class AndroidUtil Static Methods デバイスの内部データ領域へのパスを取得 public static string FileDir() デバイスの内部キャッシュ領域へのパスを取得 public static string CacheDir() デバイスの外部データ領域へのパスを取得 public static string ExternalFilesDir() デバイスの外部キャッシュ領域へのパスを取得 public static string ExternalCacheDir() デバイスの外部ストレージ領域へのパスを取得 public static string ExternalStorageDir() デバイスの外部ストレージ共有領域へのパスを取得 public static string ExternalStoragePublicDir() デバイスのダウンロードフォルダへのパスを取得 public static string DownloadDir() 指定したアクティビティを開く public static void OpenActivity(string packageName, string className, bool asNewTask) システムへブロードキャストメッセージの送信 public static void SendBroadcast(string action) APIレベルの取得 public static int GetApiLevel() Android 11 以上でファイルアクセスパーミッションのリクエスト public static void RequestAllFilesAccessPermission()"
+    "keywords": "AndroidUtil Android 用のユーティリティ関数を提供します。 namespace GarageKit public class AndroidUtil Static Methods デバイスの内部データ領域へのパスを取得 public static string FileDir() デバイスの内部キャッシュ領域へのパスを取得 public static string CacheDir() デバイスの外部データ領域へのパスを取得 public static string ExternalFilesDir() デバイスの外部キャッシュ領域へのパスを取得 public static string ExternalCacheDir() デバイスの外部ストレージ領域へのパスを取得 public static string ExternalStorageDir() デバイスの外部ストレージ共有領域へのパスを取得 public static string ExternalStoragePublicDir() デバイスのダウンロードフォルダへのパスを取得 public static string DownloadDir() 指定したアクティビティを開く public static void OpenActivity(string packageName, string className, bool asNewTask) Wifi設定アクティビティを開く public static void OpenWifiSettingActivity(bool asNewTask = true) システムへブロードキャストメッセージの送信 public static void SendBroadcast(string action) APIレベルの取得 public static int GetApiLevel() Android 11 以上でファイルアクセスパーミッションのリクエスト public static void RequestAllFilesAccessPermission()"
   },
   "Scripts_ja/Utils/AnimationCurveUtil.html": {
     "href": "Scripts_ja/Utils/AnimationCurveUtil.html",
@@ -747,7 +752,7 @@
   "Scripts_ja/Utils/AsyncUtil.html": {
     "href": "Scripts_ja/Utils/AsyncUtil.html",
     "title": "AsyncUtil | Project Starter Package Doc",
-    "keywords": "AsyncUtil Async 関連のユーティリティ関数を提供します。 namespace GarageKit public class AsyncUtil Static Methods Texture2D 非同期読み込み public static async UniTask<Texture2D> LoadTextureAsync(string path, CancellationToken ct = default) Texture2D 複数同時の非同期読み込み public static async UniTask<Texture2D[]> LoadTextureAllAsync(string[] paths, CancellationToken ct = default) 非同期ダウンロード public static async UniTask<string> DownloadAsync(string url, CancellationToken ct = default) 非同期ダウンロード後にファイル保存 public static async UniTask DownloadFileAsync(string url, string dstFile, CancellationToken ct = default) 複数対象を非同期ダウンロード後にファイル保存 public static async UniTask DownloadFileAllAsync(string[] urls, string[] dstFiles, CancellationToken ct = default)"
+    "keywords": "AsyncUtil Async 関連のユーティリティ関数を提供します。 namespace GarageKit public class AsyncUtil Static Methods Texture2D 非同期読み込み public static async UniTask<Texture2D> LoadTextureAsync(string path, CancellationToken ct = default) Texture2D 複数同時の非同期読み込み public static async UniTask<Texture2D[]> LoadTextureAllAsync(string[] paths, CancellationToken ct = default) Texture2D オプションを指定して非同期読み込み public static async UniTask<Texture2D> LoadTextureWithOptionAsync(string path, TextureFormat texFormat, bool mipChain, TextureWrapMode wrapModeU, TextureWrapMode wrapModeV, FilterMode filterMode, CancellationToken ct = default) 非同期ダウンロード public static async UniTask<string> DownloadAsync(string url, CancellationToken ct = default) 非同期ダウンロード後にファイル保存 public static async UniTask DownloadFileAsync(string url, string dstFile, CancellationToken ct = default) 複数対象を非同期ダウンロード後にファイル保存 public static async UniTask DownloadFileAllAsync(string[] urls, string[] dstFiles, CancellationToken ct = default)"
   },
   "Scripts_ja/Utils/Attribute/EnumLabelAttribute.html": {
     "href": "Scripts_ja/Utils/Attribute/EnumLabelAttribute.html",
@@ -827,7 +832,7 @@
   "Scripts_ja/Utils/CaptureUtil.html": {
     "href": "Scripts_ja/Utils/CaptureUtil.html",
     "title": "CaptureUtil | Project Starter Package Doc",
-    "keywords": "CaptureUtil キャプチャ関連のユーティリティ関数を提供します。 namespace GarageKit public class CaptureUtil Static Methods 範囲指定をして画面をキャプチャ保存 public static IEnumerator CaptureRect(string fileName, bool withTimestamp) public static IEnumerator CaptureRect(string dirPath, string fileName, Rect range, bool withTimestamp)"
+    "keywords": "CaptureUtil キャプチャ関連のユーティリティ関数を提供します。 namespace GarageKit public class CaptureUtil Static Methods 範囲指定をして画面をキャプチャ保存 public static IEnumerator CaptureRect(string fileName, bool withTimestamp) public static IEnumerator CaptureRect(string dirPath, string fileName, bool withTimestamp) public static IEnumerator CaptureRect(string dirPath, string fileName, Rect range, bool withTimestamp)"
   },
   "Scripts_ja/Utils/CommonUtil.html": {
     "href": "Scripts_ja/Utils/CommonUtil.html",
@@ -1102,7 +1107,7 @@
   "Scripts_ja/Utils/ObjectUtil.html": {
     "href": "Scripts_ja/Utils/ObjectUtil.html",
     "title": "ObjectUtil | Project Starter Package Doc",
-    "keywords": "ObjectUtil オブジェクト操作関連のユーティリティ関数を提供します。 namespace GarageKit public class ObjectUtil Static Methods 子供階層オブジェクトのレイヤーをまとめて設定する public static void SetLayerChildren(GameObject rootObject, int layer, bool changeParent = false) 階層全体のバウンディングボックスを取得 public static Bounds GetRenderBoundsChildren(GameObject root)"
+    "keywords": "ObjectUtil オブジェクト操作関連のユーティリティ関数を提供します。 namespace GarageKit public class ObjectUtil Static Methods 子供階層オブジェクトのレイヤーをまとめて設定する public static void SetLayerChildren(GameObject rootObject, int layer, bool changeParent = false) 階層全体のバウンディングボックスを取得 public static Bounds CalcLocalObjBounds(GameObject obj) public static Bounds CalcChildObjWorldBounds(GameObject obj, Bounds bounds)"
   },
   "Scripts_ja/Utils/Render/GlLineRenderer.html": {
     "href": "Scripts_ja/Utils/Render/GlLineRenderer.html",
@@ -1244,6 +1249,11 @@
     "title": "UIWebCamRawImage | Project Starter Package Doc",
     "keywords": "UIWebCamRawImage Web カメラを利用する uGUI RawImage 設定を簡易化します。 namespace GarageKit [RequireComponent(typeof(RawImage))] public class UIWebCamRawImage : MonoBehaviour Inheritance UIWebCamRawImage -> MonoBehaviour Inspector Properties member type description webcamPlayOnStart bool Start() での再生開始 deviceName string カメラデバイス名の指定 deviceIndex int カメラデバイス ID の指定 requestedWidth int カメラ映像 幅の指定 requestedHeight int カメラ映像 高さの指定 requestedFPS int カメラ映像 FPS の指定 anisoLevel int 映像テクスチャの異方性フィルタリングレベル filteMode FilterMode 映像テクスチャのフィルターモード wrapMode TextureWrapMode 映像テクスチャの繰り返しモード isMirror bool 左右反転設定 appOrientation APP_ORIENTATION 画面の向き aspectFitMode ASPECT_FIT_MODE アスペクト比設定 Enums APP_ORIENTATION enums description PORTRAIT ポートレイト / 端末縦位置 LANDSCAPE ランドスケープ / 端末横位置 LANDSCAPE_LEFT ランドスケープ / 端末横位置(ホームボタンが左手) ASPECT_FIT_MODE enums description NONE 無し FIT_WIDTH 幅をフィット FIT_HEIGHT 高さをフィット Methods WebCamTexture の取得 public WebCamTexture WebCamTexture { get; } Web カメラの開始 public IEnumerator WebcamPlay() Web カメラの停止 public void WebcamStop() Web カメラが開かれているかの確認 public bool IsWebcamPlay()"
   },
+  "Scripts_ja/Utils/UIUtil.html": {
+    "href": "Scripts_ja/Utils/UIUtil.html",
+    "title": "UIUtil | Project Starter Package Doc",
+    "keywords": "UIUtil UI関連のユーティリティ関数を提供します。 namespace GarageKit public class UIUtil Static Methods グリッドレイアウトの現在のカラム数、ロウ数をカウント public static Vector2 CalcGridLayoutColumnsAndRowsCount(GridLayoutGroup grid, int cells)"
+  },
   "Scripts_ja/Utils/VR/VRGazeGuideArrow.html": {
     "href": "Scripts_ja/Utils/VR/VRGazeGuideArrow.html",
     "title": "VRGazeGuideArrow | Project Starter Package Doc",
@@ -1267,6 +1277,6 @@
   "index.html": {
     "href": "index.html",
     "title": "GarageKit for Unity Doc | Project Starter Package Doc",
-    "keywords": "GarageKit for Unity Doc [en] What is GarageKit ？ GarageKit is a Unity C# framework. It provides a template scene with a state transition system, some managers and state scripts, utility scripts and sample scenes, and a directory structure for your project. Current Version unity package 6000+ GarageKit_for_unity6.unitypackage Beginners Tutorial You can use the Beginners Tutorial to learn how to use packages, the development flow, and the basic concept of programming. Scripts Reference For information on using scripts in packages, see the Scripts Reference. [ja] GarageKit とは？ GarageKit は Unity C# フレームワークです。状態遷移システムを備えたテンプレートシーン、いくつかのマネージャースクリプトと状態スクリプト、ユーティリティスクリプトとサンプルシーン、およびプロジェクトのディレクトリ構造を提供します。 Current Version unity package 6000+ GarageKit_for_unity6.unitypackage 初学者向けチュートリアル 初学者向けチュートリアル を使用して、パッケージの使用方法、開発フロー、プログラミングの基本概念を学ぶことができます。 スクリプトリファレンス パッケージのスクリプトの使用については、スクリプトリファレンス を参照してください。"
+    "keywords": "GarageKit for Unity Doc [en] What is GarageKit ？ GarageKit is a Unity C# framework. It provides a template scene with a state transition system, some managers and state scripts, utility scripts and sample scenes, and a directory structure for your project. Current Version unity package 6200+ GarageKit_for_unity6.unitypackage Beginners Tutorial You can use the Beginners Tutorial to learn how to use packages, the development flow, and the basic concept of programming. Scripts Reference For information on using scripts in packages, see the Scripts Reference. [ja] GarageKit とは？ GarageKit は Unity C# フレームワークです。状態遷移システムを備えたテンプレートシーン、いくつかのマネージャースクリプトと状態スクリプト、ユーティリティスクリプトとサンプルシーン、およびプロジェクトのディレクトリ構造を提供します。 Current Version unity package 6200+ GarageKit_for_unity6.unitypackage 初学者向けチュートリアル 初学者向けチュートリアル を使用して、パッケージの使用方法、開発フロー、プログラミングの基本概念を学ぶことができます。 スクリプトリファレンス パッケージのスクリプトの使用については、スクリプトリファレンス を参照してください。"
   }
 }

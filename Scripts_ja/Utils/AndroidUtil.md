@@ -49,6 +49,11 @@ public static string DownloadDir()
 public static void OpenActivity(string packageName, string className, bool asNewTask)
 ```
 
+Wifi設定アクティビティを開く
+```csharp
+public static void OpenWifiSettingActivity(bool asNewTask = true)
+```
+
 システムへブロードキャストメッセージの送信
 ```csharp
 public static void SendBroadcast(string action)

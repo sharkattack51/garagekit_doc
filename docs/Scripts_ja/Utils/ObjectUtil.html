@@ -88,7 +88,8 @@ public class ObjectUtil
 <pre><code class="lang-csharp">public static void SetLayerChildren(GameObject rootObject, int layer, bool changeParent = false)
 </code></pre>
 <p>階層全体のバウンディングボックスを取得</p>
-<pre><code class="lang-csharp">public static Bounds GetRenderBoundsChildren(GameObject root)
+<pre><code class="lang-csharp">public static Bounds CalcLocalObjBounds(GameObject obj)
+public static Bounds CalcChildObjWorldBounds(GameObject obj, Bounds bounds)
 </code></pre>
 
 </article>

@@ -49,6 +49,11 @@ Open specified activity
 public static void OpenActivity(string packageName, string className, bool asNewTask)
 ```
 
+Open Wifi setting activity
+```csharp
+public static void OpenWifiSettingActivity(bool asNewTask = true)
+```
+
 Sending broadcast messages to the system
 ```csharp
 public static void SendBroadcast(string action)

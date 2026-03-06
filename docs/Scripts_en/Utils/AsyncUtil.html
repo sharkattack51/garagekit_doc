@@ -90,6 +90,9 @@ public class AsyncUtil
 <p>Texture2D multiple simultaneous asynchronous loading</p>
 <pre><code class="lang-csharp">public static async UniTask&lt;Texture2D[]&gt; LoadTextureAllAsync(string[] paths, CancellationToken ct = default)
 </code></pre>
+<p>Texture2D asynchronous loading with option</p>
+<pre><code class="lang-csharp">public static async UniTask&lt;Texture2D&gt; LoadTextureWithOptionAsync(string path, TextureFormat texFormat, bool mipChain, TextureWrapMode wrapModeU, TextureWrapMode wrapModeV, FilterMode filterMode, CancellationToken ct = default)
+</code></pre>
 <p>Asynchronous downlod</p>
 <pre><code class="lang-csharp">public static async UniTask&lt;string&gt; DownloadAsync(string url, CancellationToken ct = default)
 </code></pre>

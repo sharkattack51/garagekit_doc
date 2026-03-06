@@ -19,6 +19,11 @@ Texture2D multiple simultaneous asynchronous loading
 public static async UniTask<Texture2D[]> LoadTextureAllAsync(string[] paths, CancellationToken ct = default)
 ```
 
+Texture2D asynchronous loading with option
+```csharp
+public static async UniTask<Texture2D> LoadTextureWithOptionAsync(string path, TextureFormat texFormat, bool mipChain, TextureWrapMode wrapModeU, TextureWrapMode wrapModeV, FilterMode filterMode, CancellationToken ct = default)
+```
+
 Asynchronous downlod
 ```csharp
 public static async UniTask<string> DownloadAsync(string url, CancellationToken ct = default)

@@ -16,5 +16,6 @@ public static void SetLayerChildren(GameObject rootObject, int layer, bool chang
 
 Get the bounding box of the entire hierarchy
 ```csharp
-public static Bounds GetRenderBoundsChildren(GameObject root)
+public static Bounds CalcLocalObjBounds(GameObject obj)
+public static Bounds CalcChildObjWorldBounds(GameObject obj, Bounds bounds)
 ```

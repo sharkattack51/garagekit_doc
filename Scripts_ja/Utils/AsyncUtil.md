@@ -19,6 +19,11 @@ Texture2D 複数同時の非同期読み込み
 public static async UniTask<Texture2D[]> LoadTextureAllAsync(string[] paths, CancellationToken ct = default)
 ```
 
+Texture2D オプションを指定して非同期読み込み
+```csharp
+public static async UniTask<Texture2D> LoadTextureWithOptionAsync(string path, TextureFormat texFormat, bool mipChain, TextureWrapMode wrapModeU, TextureWrapMode wrapModeV, FilterMode filterMode, CancellationToken ct = default)
+```
+
 非同期ダウンロード
 ```csharp
 public static async UniTask<string> DownloadAsync(string url, CancellationToken ct = default)
